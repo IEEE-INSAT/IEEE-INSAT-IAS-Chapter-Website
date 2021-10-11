@@ -1,0 +1,50 @@
+@import '../../../variables';
+.welcome{
+    min-height:100vh;
+    background-color: rgba(0, 0, 0, 0.315);
+    backdrop-filter: blur(3px);
+    display: flex; 
+    align-items: center;
+    .green-part{
+        background: linear-gradient($primary-green, $secondary-green);
+        color: $primary-white;
+        padding: 90px 0;
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 180px;
+        clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+        transform: scaleX(0);
+        transform-origin: left; 
+        animation: trans-back 700ms ease forwards;
+        h1{
+            font-family: 'sansation';
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom:20px;
+            opacity: 0; transform:translateY(-100%);
+            animation: trans-opa-back 700ms ease forwards 200ms;
+        }
+        p{
+            font-size: 1.5rem;
+            opacity: 0; transform:translateY(-100%);
+            animation: trans-opa-back 700ms ease forwards 200ms;
+        }
+        p:last-of-type{
+            margin-top: 30px;
+            font-size: 1.85rem;
+        }
+    }
+}
+
+@keyframes trans-back {
+    100%{
+        transform: none; 
+    }
+}
+
+@keyframes trans-opa-back{
+    100%{
+        opacity: 1 ; 
+        transform : none;
+    }
+}

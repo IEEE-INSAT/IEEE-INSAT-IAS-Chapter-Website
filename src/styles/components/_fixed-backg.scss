@@ -1,0 +1,29 @@
+.fixed-backg{ 
+    position: fixed;
+    z-index: -1;
+    top:0;
+    left:0; 
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    .gear{
+        position: absolute;
+    }
+    .gear:nth-of-type(odd){
+        animation: rotate-360 5s linear infinite; 
+    }
+    .gear:nth-of-type(even){
+        animation: rotate--360 5s linear infinite;
+    }
+}
+
+@keyframes rotate-360{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate--360{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
