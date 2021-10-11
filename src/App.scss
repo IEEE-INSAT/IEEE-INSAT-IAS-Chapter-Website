@@ -8,6 +8,15 @@ html{
   font-size: 20px;
 }
 
+:root {
+  --big-font: 2.5rem ;
+  --bigger-font: 3rem;
+  --less-big-font: 1.8rem; 
+  --little-big-font: 1.1rem;
+  --big-paragraph: 1.5rem; 
+  --bigger-paragraph: 1.85rem;
+}
+
 *{
   margin: 0; 
   padding: 0; 
@@ -19,6 +28,31 @@ body{
   z-index : 1; 
   line-height: 1.6em ;
   font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 80%; 
+  max-width: 1200px; 
+  margin: auto ;
+}
+
+h1{
+  font-size: var(--big-font);
+  font-weight:700;
+}
+
+h2{
+  font-size: var(--less-big-font);
+  font-weight: 600;
+}
+h3{
+  font-size:var(--little-big-font);
+  font-weight: 600;
+}
+
+h1,h2,h3{
+  font-family: 'sansation','Ubuntu';
+  line-height:1.6em;
 }
 
 @media (max-width: 700px){

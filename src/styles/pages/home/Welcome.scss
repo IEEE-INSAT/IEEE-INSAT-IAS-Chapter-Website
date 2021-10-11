@@ -1,7 +1,7 @@
 @import '../../../variables';
 .welcome{
     min-height:100vh;
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: rgba($color: #114000, $alpha: 0.29);
     backdrop-filter: blur(3px);
     display: flex; 
     align-items: center;
@@ -19,19 +19,19 @@
         h1{
             font-family: 'sansation';
             font-weight: 700;
-            font-size: 2rem;
+            font-size: var(--big-font);
             margin-bottom:20px;
             opacity: 0; transform:translateY(-100%);
             animation: trans-opa-back 700ms ease forwards 200ms;
         }
         p{
-            font-size: 1.5rem;
+            font-size: var(--big-paragraph);
             opacity: 0; transform:translateY(-100%);
             animation: trans-opa-back 700ms ease forwards 200ms;
         }
         p:last-of-type{
             margin-top: 30px;
-            font-size: 1.85rem;
+            font-size: var(--bigger-paragraph);
         }
     }
 }
