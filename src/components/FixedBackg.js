@@ -1,5 +1,6 @@
 import React from 'react'
 import { getFromPublic } from "../shared/functions/public";
+import Mouse from './Mouse';
 
 const wheel_positions = [
     {top:'10px' , left: '10px'},
@@ -23,6 +24,8 @@ export default function FixedBackg() {
                     )} alt="" className="gear" style={pos} />
                 ))
             }
+
+            <Mouse className="gear"/>
 
             
         </div>
