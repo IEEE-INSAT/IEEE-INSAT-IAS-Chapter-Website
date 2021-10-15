@@ -5,6 +5,7 @@ import News from './home/News'
 import Linking from './home/Linking'
 import Numbers from './home/Numbers'
 import Team from './home/Team'
+import Contact from '../components/Contact'
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
             <Linking/>
             <Numbers/>
             <Team/>
+            <Contact/>
         </div>
     )
 }

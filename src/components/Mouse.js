@@ -9,7 +9,6 @@ export default function Mouse(props) {
 
     useEffect(()=>{
         document.addEventListener("mousemove",(e)=>{
-            console.log(e)
             setCoordinates({
                 top:e.clientY ,
                 left: e.clientX 
@@ -24,7 +23,7 @@ export default function Mouse(props) {
                 position: 'absolute',
                 top: coordinates.top - 100 , 
                 left: coordinates.left -100 ,
-                transition: 'top 200ms linear 5ms, left 200ms linear 5ms',
+                // transition: 'top 1ms linear  , left 1ms linear ',
                 backgroundColor:'rgba(0,0,0,0.5)',
                 borderRadius: '50%',
 

@@ -1,4 +1,4 @@
-
+@import 'variables';
 @font-face {
   font-family: 'sansation';
   src: url(styles/fonts/Sansation_Regular.ttf);
@@ -9,12 +9,19 @@ html{
 }
 
 :root {
+  //font sizes
   --big-font: 2.5rem ;
   --bigger-font: 3rem;
   --less-big-font: 1.8rem; 
   --little-big-font: 1.1rem;
   --big-paragraph: 1.5rem; 
   --bigger-paragraph: 1.85rem;
+
+  //colors 
+  --dark-background:#051400c2 ;
+  --primary-green: #0FBF00;
+  --secondary-green:#A4BE00;
+  --primary-white: white;
 }
 
 *{

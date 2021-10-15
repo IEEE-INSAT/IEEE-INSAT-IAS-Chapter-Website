@@ -11,12 +11,12 @@ const cardsContent = [
     },
     {
         title:'Connecting Engineers',
-        image:getFromPublic("/images/head-icons/proximity.png"),
+        image:getFromPublic("/images/head-icons/connecting-engineers.png"),
         text : 'Attending conferences and connecting student engineers with onfield ones is what we do. '
     },
     {
         title:'Top Traineeships',
-        image:getFromPublic("/images/head-icons/proximity.png"),
+        image:getFromPublic("/images/head-icons/top-traineeships.png"),
         text : 'Regular training session and workshops on the latest industrial tools and standards  . '
     }
 ]

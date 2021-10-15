@@ -3,6 +3,8 @@ import { getFromPublic } from '../../shared/functions/public'
 import '../../styles/pages/home/Team.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCog } from '@fortawesome/free-solid-svg-icons'
+import Tesla from '../../shared/components/Tesla'
+
 
 const working_members = [
     {
@@ -27,7 +29,6 @@ export default function Team() {
 
     useEffect(()=>{
         const members = document.querySelectorAll(".member");
-        console.log(members)
 
         const options ={
             threshold: 0.8
@@ -57,7 +58,9 @@ export default function Team() {
     return (
         <div className="team">
             {
-                working_members.map(({name,quote,image},index)=>(
+                <>
+                <Tesla/>
+                {working_members.map(({name,quote,image},index)=>(
                     <div className={`member ${(index%2)?"inverse":""}`}>
                         <div className="container">
                             <div className="image">
@@ -72,7 +75,8 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
-                ))
+                ))}
+                </>
             }
         </div>
     )
