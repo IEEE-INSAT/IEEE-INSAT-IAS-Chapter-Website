@@ -48,3 +48,10 @@
         transform : none;
     }
 }
+
+@media(max-width: 500px) {
+    .welcome .green-part{
+        padding:40px 10px;
+        padding-right: 50px;
+    }
+}

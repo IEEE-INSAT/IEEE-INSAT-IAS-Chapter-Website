@@ -1,66 +1,66 @@
 const members = [
     [
         {
-            name: "Omar Kouki",
-            position:"Chair",
+            name: "Khawla Soltani",
+            position:"Vice Chair",
             facebook: "#",
             linkedin: "#",
-            image: '/images/pictures/members/chair.jpg'
+            image: '/images/pictures/members/viceChair.jpg'
         },
         {
-            name: "Omar Kouki",
-            position:"Chair",
+            name: "Mohamed Jedidi",
+            position:"Training Manager",
             facebook: "#",
             linkedin: "#",
-            image: '/images/pictures/members/chair.jpg'
-        },
-    ],
-    [
-        {
-            name: "Omar Kouki",
-            position:"Chair",
-            facebook: "#",
-            linkedin: "#",
-            image: '/images/pictures/members/chair.jpg'
-        },
-        {
-            name: "Omar Kouki",
-            position:"Chair",
-            facebook: "#",
-            linkedin: "#",
-            image: '/images/pictures/members/chair.jpg'
+            image: '/images/pictures/members/trainingManager.jpg'
         },
     ],
     [
         {
-            name: "Omar Kouki",
-            position:"Chair",
+            name: "Dali Sahnoun",
+            position:"Webmaster",
             facebook: "#",
             linkedin: "#",
-            image: '/images/pictures/members/chair.jpg'
+            image: '/images/pictures/members/webmaster.jpg'
         },
         {
-            name: "Omar Kouki",
-            position:"Chair",
+            name: "Mariem Abdellatif",
+            position:"HR Manager",
             facebook: "#",
             linkedin: "#",
-            image: '/images/pictures/members/chair.jpg'
+            image: '/images/pictures/members/HRManager.jpg'
         },
     ],
     [
         {
-            name: "Omar Kouki",
-            position:"Chair",
+            name: "Dali Zoghlami",
+            position:"Media Manager",
             facebook: "#",
             linkedin: "#",
-            image: '/images/pictures/members/chair.jpg'
+            image: '/images/pictures/members/mediaManager.jpg'
         },
         {
-            name: "Omar Kouki",
-            position:"Chair",
+            name: "Elyes Chemakh",
+            position:"Logistics Manager",
             facebook: "#",
             linkedin: "#",
-            image: '/images/pictures/members/chair.jpg'
+            image: '/images/pictures/members/logisticsManager.jpg'
+        },
+    ],
+    [
+        {
+            name: "Hamda BK",
+            position:"Treasurer",
+            facebook: "#",
+            linkedin: "#",
+            image: '/images/pictures/members/treasurer.jpg'
+        },
+        {
+            name: "Chaima Ben Amor",
+            position:"General Secretary",
+            facebook: "#",
+            linkedin: "#",
+            image: '/images/pictures/members/generalSecretary.jpg'
         },
     ]
 ]

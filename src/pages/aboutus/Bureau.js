@@ -17,17 +17,17 @@ export default function Bureau() {
         <div className="bureau">
             <h1 className="title">MEET THE TEAM</h1>
             <br />
-            <div className="container">
+            <div className="double container">
                 <MemberImage {...chair} />
-                {
-                    members.map(double=>(
-                        <div className="double">
-                            <MemberImage {...double[0]} />
-                            <MemberImage {...double[1]} />
-                        </div>
-                    ))
-                }
             </div>
+            {
+                members.map(double=>(
+                    <div className="double container">
+                        <MemberImage {...double[0]} />
+                        <MemberImage {...double[1]} />
+                    </div>
+                ))
+            }
         </div>
     )
 }

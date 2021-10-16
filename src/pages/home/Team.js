@@ -13,14 +13,14 @@ const working_members = [
         image: "/images/pictures/members/chair.jpg"
     },
     {
-        name: "Omar Kouki",
+        name: "Maryem Abdellatif",
         quote : "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-        image: "/images/pictures/members/chair.jpg"
+        image: "/images/pictures/members/HRManager.jpg"
     },
     {
-        name: "Omar Kouki",
+        name: "Mohamed Jedidi",
         quote : "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-        image: "/images/pictures/members/chair.jpg"
+        image: "/images/pictures/members/trainingManager.jpg"
     }
 ]
 
