@@ -25,11 +25,11 @@ export default function Contact() {
                     <p>+216 96 671 872</p>
                 
                     <div className="icons">
-                        <a href="#">
-                        <FontAwesomeIcon icon={faFacebook} />
+                        <a href="https://www.facebook.com/IASINSAT/">
+                            <FontAwesomeIcon icon={faFacebook} />
                         </a>
-                        <a href="#">
-                        <FontAwesomeIcon icon={faLinkedin} />
+                        <a href="https://www.linkedin.com/company/ieee-insat-ias-sbc/mycompany/">
+                            <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                     </div>
                 </div>

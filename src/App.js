@@ -1,10 +1,14 @@
 import './App.scss';
 import Home from './pages/Home';
+import FixedBackg from './components/FixedBackg';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <FixedBackg/>
+      {/* <Home/> */}
+      <AboutUs/>
     </div>
   );
 }
