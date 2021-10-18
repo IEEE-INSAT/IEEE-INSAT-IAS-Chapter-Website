@@ -1,0 +1,14 @@
+//return any object to normal visible
+@keyframes back-to-normal {
+    100% {
+        transform: none; 
+        opacity: 1; 
+    }
+}
+
+@keyframes disappear-left {
+    100% {  
+        opacity : 0 ;
+        transform : translateX(-50px);
+    }
+}

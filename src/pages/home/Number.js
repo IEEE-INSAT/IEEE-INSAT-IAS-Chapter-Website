@@ -5,7 +5,10 @@ export default function Number({title,number, image}) {
     const [counter, setCounter] = useState(0);
     const cardRef = useRef();
 
+    //adding interval on reveal
     useEffect(()=>{
+        const current = cardRef.current;
+
         const options = {
             threshold :0.4
         }
@@ -18,10 +21,12 @@ export default function Number({title,number, image}) {
                     const interval = setInterval(()=>{
                         counted =true
                         setCounter(prev=>{
+                            // clear interval if we reach the number
                             if(!(prev<number)){
                                 clearInterval(interval)
                                 return prev ;
                             }
+                            //else return +1
                             return prev+1;
                         })
                     }, 100);
@@ -29,13 +34,13 @@ export default function Number({title,number, image}) {
             })
         },options)
 
-        inters.observe(cardRef.current);
+        inters.observe(current);
 
         return ()=>{
-            inters.disconnect(cardRef.current);
+            inters.disconnect(current);
         }
         
-    },[])
+    },[number])
 
     return (
         <div ref={cardRef} style={{

@@ -17,6 +17,9 @@ export default function Tesla() {
     const pageRef = useRef();
 
     useEffect(()=>{
+
+        const current = pageRef.current; 
+
         const options ={
             threshold: 0.8
         }
@@ -30,10 +33,10 @@ export default function Tesla() {
             })
         },options)
 
-        inters.observe(pageRef.current);
+        inters.observe(current);
 
         return ()=>{
-            inters.disconnect(pageRef.current)
+            inters.disconnect(current)
         }
     },[])
 

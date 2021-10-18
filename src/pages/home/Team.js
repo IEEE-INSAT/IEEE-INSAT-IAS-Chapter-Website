@@ -27,6 +27,7 @@ const working_members = [
 
 export default function Team() {
 
+    //change classes on reveal
     useEffect(()=>{
         const members = document.querySelectorAll(".member");
 

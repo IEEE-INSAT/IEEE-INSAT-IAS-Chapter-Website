@@ -12,9 +12,13 @@ nav{
         align-items:center;
         transition: padding 500ms ease;
     }
+
+    //fixing logo height
     img{
         height: 75px;
     }
+
+    //navbar buttons
     ul{
         display:flex;
         a{
@@ -43,6 +47,7 @@ nav{
         }
     }
 
+    //the show nav button on mobile
     .nav-button{
         display: none;
     }
@@ -50,25 +55,30 @@ nav{
         width: 25px; height: 3px;
         margin: 5px 0 ;
         background-color: white;
+        transition: transform 300ms ease;
+    }
+    .line:first-of-type, .line:last-of-type{
+        transform-origin: right;
     }
 
+    // the show nav after clicked
     .nav-button.clicked{
         .line:first-of-type{
             transform: translateY(-0.5px) rotate(-45deg);
-            transform-origin: right;
+            
         }
         .line:nth-of-type(2){
             opacity: 0;
         }
         .line:last-of-type{
             transform: translateY(0.5px) rotate(45deg);
-            transform-origin: right;
         }
     }
 }
 
+//the navbar changes after scroll
 nav.scrolled{
-    background-color: rgba(255, 255, 255, 0.301);
+    background-color: var(--primary-transparent-green);
     backdrop-filter: blur(10px);
     box-shadow: 10px 10px 10px -6px rgba(0,0,0,0.35);
     -webkit-box-shadow: 10px 10px 10px -6px rgba(0,0,0,0.35);
@@ -76,22 +86,18 @@ nav.scrolled{
     .container{
         padding: 0;
     }
-    ul a{
-        color: black;
-        &::after{
-            background-color: black;
-        }
-    }
-    .line{
-        background-color: black;
-    }
 }
 
+
+//restying navbar on mobile
 @media(max-width: 900px){
     nav{
+        //showing the show nav button
         .nav-button{
             display: block;
         }
+
+        //restyling the ul buttons
         ul{
             position: absolute;
             height: 100vh; width: 100%;
@@ -99,7 +105,7 @@ nav.scrolled{
             align-items: center;
             justify-content: space-around;
             top:0; left: 0;
-            background-color: rgba($color: green, $alpha: 0.5);
+            background-color: var(--primary-transparent-green);
             backdrop-filter: blur(10px);
             transform: scale(0);
             transform-origin : top right;
@@ -108,10 +114,8 @@ nav.scrolled{
             border-radius: 0 0 0 100%;
             overflow: hidden;
             a{
-                transform : translateX(-50px);
-                opacity: 0;
-                transition: transform 500ms ease 750ms,
-                    opacity 500ms ease 750ms;
+                transform: translateX(-50px);
+                opacity:0;
                 color: white;
                 &::after {
                     background-color: white;
@@ -119,26 +123,16 @@ nav.scrolled{
             }
         }
     }
+
+    //showing the ul when clicking on show nav button
     nav.clicked{
         ul{
             transform: none;
             border-radius: 0 0 0 80px;
             a{
-                transform: none;
-                opacity :1;
-            }
-        }
-        .line{
-            background-color: white;
-        }
-
-    }
-    nav.scrolled {
-        ul a{
-            color: white;
-            &::after{
-                background-color: white;
+                animation: back-to-normal 500ms ease 750ms forwards;
             }
         }
     }
 }
+

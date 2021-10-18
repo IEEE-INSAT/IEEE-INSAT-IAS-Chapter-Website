@@ -1,10 +1,11 @@
 @import '../../../variables';
 .welcome{
     min-height:100vh;
-    background-color: rgba($color: #114000, $alpha: 0.29);
-    backdrop-filter: blur(3px);
+    background-color: var(--less-dark-background);
     display: flex; 
     align-items: center;
+
+    //the disover polygon
     .green-part{
         background: linear-gradient($primary-green, $secondary-green);
         color: $primary-white;
@@ -15,20 +16,26 @@
         clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
         transform: scaleX(0);
         transform-origin: left; 
-        animation: trans-back 700ms ease forwards;
+        animation: back-to-normal 700ms ease forwards;
+
+        // the title : Discover
         h1{
             font-family: 'sansation';
             font-weight: 700;
             font-size: var(--big-font);
             margin-bottom:20px;
             opacity: 0; transform:translateY(-100%);
-            animation: trans-opa-back 700ms ease forwards 200ms;
+            animation: back-to-normal 700ms ease forwards 200ms;
         }
+
+        // the paragraphs
         p{
             font-size: var(--big-paragraph);
             opacity: 0; transform:translateY(-100%);
-            animation: trans-opa-back 700ms ease forwards 200ms;
+            animation: back-to-normal 700ms ease forwards 200ms;
         }
+
+        // the last paragraph should be a little bit bigger
         p:last-of-type{
             margin-top: 30px;
             font-size: var(--bigger-paragraph);
@@ -36,19 +43,8 @@
     }
 }
 
-@keyframes trans-back {
-    100%{
-        transform: none; 
-    }
-}
 
-@keyframes trans-opa-back{
-    100%{
-        opacity: 1 ; 
-        transform : none;
-    }
-}
-
+// removing padding on smaller phones
 @media(max-width: 500px) {
     .welcome .green-part{
         padding:40px 10px;

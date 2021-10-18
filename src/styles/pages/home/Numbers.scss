@@ -7,9 +7,12 @@
     align-items: center;
     flex-wrap: wrap;
 
+    // title
     h3{
         margin-bottom:15px;
     }
+
+    //number
     p{
         font-size: var(--bigger-paragraph);
     }

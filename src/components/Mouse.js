@@ -7,6 +7,7 @@ export default function Mouse(props) {
         top: 0, left:0
     })
 
+    //listening to mouse move and moving
     useEffect(()=>{
         document.addEventListener("mousemove",(e)=>{
             setCoordinates({

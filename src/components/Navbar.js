@@ -12,12 +12,14 @@ export default function Navbar() {
 
     const location= useLocation()
 
+    //change style on scroll
     useEffect(()=>{
         window.addEventListener('scroll',()=>{
             setScrolled(window.pageYOffset>50);
         })
     },[])
 
+    //close navbar on route change
     useEffect(()=>{
         setClicked(false);
     },[location])

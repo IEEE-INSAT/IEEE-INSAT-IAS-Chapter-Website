@@ -9,7 +9,10 @@ export default function MemberImage({name, position, facebook, linkedin,image}) 
 
     const memberRef = useRef(null);
 
+    //changing class when revealed
     useEffect(()=>{
+        const current = memberRef.current;
+
         const options ={
             threshold: 0.8
         }
@@ -23,10 +26,10 @@ export default function MemberImage({name, position, facebook, linkedin,image}) 
             })
         },options)
 
-        inters.observe(memberRef.current)
+        inters.observe(current)
 
         return ()=>{
-            inters.disconnect(memberRef.current);
+            inters.disconnect(current);
         }
     },[])
 

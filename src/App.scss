@@ -1,9 +1,12 @@
+//importing needs
 @import 'variables';
+@import 'keyframes';
 @font-face {
   font-family: 'sansation';
   src: url(styles/fonts/Sansation_Regular.ttf);
 }
 
+//setting global font-size and selection color
 html{
   font-size: 20px;
 }
@@ -11,6 +14,7 @@ html{
   color: rgb(84, 160, 84);
 }
 
+//setting global variables
 :root {
   //font sizes
   --big-font: 2.5rem ;
@@ -22,12 +26,15 @@ html{
 
   //colors 
   --dark-background:#051400c2 ;
+  --less-dark-background: #05140091;
   --primary-green: #0FBF00;
+  --primary-transparent-green: #0a7700b6;
   --secondary-green:#A4BE00;
   --primary-white: white;
   --dark-green: #345308;
 }
 
+//start template
 *{
   margin: 0; 
   padding: 0; 
@@ -41,6 +48,8 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+
+//custom fonts and container
 .container {
   width: 80%; 
   max-width: 1200px; 
@@ -66,6 +75,8 @@ h1,h2,h3{
   line-height:1.6em;
 }
 
+
+//reducing global font-size on mobile
 @media (max-width: 700px){
   html{
     font-size: 15px

@@ -2,16 +2,22 @@
     background-color: white;
     color: black;
     padding: 50px 0;
+
+    //row flex for everything
     .container {
         display: flex; 
         min-height: 500px;
         max-width: none;
     }
+
+    //column flex for each child
     .cos-left, .cos-right,.cos-center{
         display:flex;
         flex-direction: column;
         justify-content: center;
     }
+
+    // space between paragraph elements in left adn right
     .cos-left, .cos-right{
         flex: 1; 
         justify-content: space-between;
@@ -20,9 +26,13 @@
             margin-bottom: 20px;
         }
     }
+
+    //svg doesn't shrink
     .cos-center{
         flex-shrink: 0 ;
     }
+
+    //space for left and right
     .cos-left{
         margin-right: 20px;
     }
@@ -31,6 +41,8 @@
     }
 }
 
+
+//removing svg on less sized windows
 @media (max-width: 1400px){
     .information{
         .cos-center{
@@ -46,6 +58,8 @@
     }
 }
 
+
+//general flex to collumn on mobile
 @media (max-width: 550px){
     .information{
         .container{

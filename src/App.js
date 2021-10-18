@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 
 import { Route, useLocation } from "react-router-dom";
 
-
+// setting routes
 const routes = [
   {path: '/' , Component:Home, name:"home"},
   {path: '/about', Component:AboutUs, name:"about-us"}
@@ -19,6 +19,7 @@ function App() {
 
   const location= useLocation();
 
+  //scroll to top on route change
   useEffect(() => {
     window.scrollTo({
       top:0,

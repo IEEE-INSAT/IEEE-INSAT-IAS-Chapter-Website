@@ -1,5 +1,4 @@
 import React from 'react'
-import FixedBackg from '../components/FixedBackg'
 import Welcome from './home/Welcome'
 import News from './home/News'
 import Linking from './home/Linking'

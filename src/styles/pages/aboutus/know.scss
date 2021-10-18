@@ -7,6 +7,8 @@
     color: black;
     padding: 50px 0 ;
     padding-top: 25px;
+
+    //layer above background
     &::after{
         content: '';
         position: absolute;
@@ -15,6 +17,7 @@
         z-index: -1;
     }
 
+    //content
     h1{
         font-weight: 500;
         margin-bottom: 10px;

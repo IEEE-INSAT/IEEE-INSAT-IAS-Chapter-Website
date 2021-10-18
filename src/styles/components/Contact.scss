@@ -3,6 +3,8 @@
     background-image:  linear-gradient(180deg,var(--primary-green), var(--secondary-green));
     position: relative;
     z-index:2;
+
+    //wave above
     .behind-wave{
         position: absolute;
         bottom: 96%;
@@ -15,6 +17,7 @@
         }
     }
 
+    //flexing the items
     .container{
         padding-top:10px ;
         padding-bottom: 100px;
@@ -25,12 +28,15 @@
         }
     }
 
+    //left and right style
     .cos-left, .cos-right{
         text-align: center;
         img{
             margin-bottom: 20px;
         }
     }
+
+    //right style
     .cos-right {
         text-align: left;
         margin-left: 80px;
@@ -38,6 +44,8 @@
         display: flex; 
         flex-direction: column;
         justify-content: center;
+
+        // fb and linkedin icons
         .icons{
             margin-top: 20px;
         }
@@ -53,6 +61,7 @@
     }
 }
 
+//mobile changes
 @media (max-width: 700px){
     .contact {
         .container{
