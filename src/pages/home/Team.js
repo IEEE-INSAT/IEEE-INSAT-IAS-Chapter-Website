@@ -1,9 +1,10 @@
-import React,{useEffect} from 'react'
-import { getFromPublic } from '../../shared/functions/public'
+import React,{ useRef } from 'react'
+
 import '../../styles/pages/home/Team.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCog } from '@fortawesome/free-solid-svg-icons'
 import Tesla from '../../shared/components/Tesla'
+import SpinImage from '../../components/SpinImage'
+import useRevealOne from '../../shared/hooks/useRevealOne'
+import TextLineReveal from '../../components/TextLineReveal'
 
 
 const working_members = [
@@ -24,38 +25,23 @@ const working_members = [
     }
 ]
 
+function Content({name, quote}) {
+
+    const contentRef = useRef(null);
+    useRevealOne(contentRef);
+
+    return (
+        <div className="content" ref={contentRef}>
+            <TextLineReveal>
+                <h2> {name} </h2>
+            </TextLineReveal>
+            <p> {quote} </p>
+        </div>
+    )
+}
+
 
 export default function Team() {
-
-    //change classes on reveal
-    useEffect(()=>{
-        const members = document.querySelectorAll(".member");
-
-        const options ={
-            threshold: 0.8
-        }
-
-        const inters = new IntersectionObserver((entries, observe)=>{
-            entries.forEach(entry =>{
-                if(entry.isIntersecting){
-                    entry.target.classList.add("visible")
-                }else {
-                    entry.target.classList.remove("visible")
-                }
-            })
-        },options)
-
-        members.forEach(member=>{
-            inters.observe(member)
-        })
-
-        return ()=>{
-            members.forEach(member=>{
-                inters.disconnect(member);
-            })
-        }
-    },[])
-
     return (
         <div className="team">
             {
@@ -64,16 +50,8 @@ export default function Team() {
                 {working_members.map(({name,quote,image},index)=>(
                     <div className={`member ${(index%2)?"inverse":""}`}>
                         <div className="container">
-                            <div className="image">
-                                <FontAwesomeIcon icon={faCog}/>
-                                <div className="img" alt="" >
-                                    <img src={getFromPublic(image)} alt="" />
-                                </div>
-                            </div>
-                            <div className="content">
-                                <h2> {name} </h2>
-                                <p> {quote} </p>
-                            </div>
+                            <SpinImage image={image} />
+                            <Content name={name} quote={quote} />
                         </div>
                     </div>
                 ))}
