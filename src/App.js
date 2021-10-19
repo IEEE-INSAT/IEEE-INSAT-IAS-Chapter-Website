@@ -31,7 +31,6 @@ function App() {
     <div className="App">
       <FixedBackg/>
       <Navbar/>
-
       {
         routes.map(({path, Component})=>(
             <Route exact path={path}>
@@ -39,7 +38,6 @@ function App() {
             </Route>
         ))
       }  
-
     </div>
   );
 }
