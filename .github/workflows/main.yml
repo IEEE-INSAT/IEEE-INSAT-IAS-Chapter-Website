@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
         
       - name: showing credentials
-        run: echo credentialsre:${{ secrets.AZURE_CREDENTIALS }}      
+        run: echo "credentialsre:${{ secrets.AZURE_CREDENTIALS }}"      
 
       - uses: actions/setup-node@v1
         with:
