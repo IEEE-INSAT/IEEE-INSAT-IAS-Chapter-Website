@@ -1,4 +1,5 @@
 import React from 'react'
+import TextLineReveal from '../../components/TextLineReveal'
 import { getFromPublic } from '../../shared/functions/public'
 import '../../styles/pages/home/Linking.scss'
 import Card from './Card'
@@ -26,8 +27,8 @@ export default function Linking() {
         <div className="linking" style={{
             backgroundImage:`url('${getFromPublic("/images/backgrounds/it-research.jpg")}')`
         }}>
-            <h2>Linking Research To Practice</h2>
-            <p>Linking Engineers To Worldwide Expertise</p>
+            <TextLineReveal> <h2>Linking Research To Practice</h2> </TextLineReveal>
+            <TextLineReveal delay={300}> <p>Linking Engineers To Worldwide Expertise</p> </TextLineReveal>
             <div className="card-container">
                 {cardsContent.map(content=>(
                     <Card {...content}/>

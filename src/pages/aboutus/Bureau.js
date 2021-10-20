@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import '../../styles/pages/aboutus/bureau.scss'
 import MemberImage from '../../components/MemberImage'
 import members from '../../shared/db/Bureau'
+import useRevealOne from '../../shared/hooks/useRevealOne'
 
 const chair = {
     name: "Omar Kouki",
@@ -13,9 +14,14 @@ const chair = {
 
 
 export default function Bureau() {
+
+    const titleRef = useRef(null); 
+
+    useRevealOne(titleRef)
+
     return (
         <div className="bureau">
-            <h1 className="title">MEET THE TEAM</h1>
+            <h1 className="title" ref={titleRef}>MEET THE TEAM</h1>
             <br />
             <div className="double container">
                 <MemberImage {...chair} />
