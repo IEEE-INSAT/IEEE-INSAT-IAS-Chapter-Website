@@ -34,7 +34,8 @@ jobs:
         with:
           azcliversion: 2.0.72
           inlineScript: |
-              az storage blob upload-batch --account-name ias-website-dev --auth-mode key -d '$web' -s ./build
+              az storage blob upload-batch --account-name mohamedalisahnoun@insat.u-carthage.tn --auth-mode key -d '$web' -s ./build
+
       - name: Purge CDN endpoint
         uses: azure/CLI@v1
         with:
