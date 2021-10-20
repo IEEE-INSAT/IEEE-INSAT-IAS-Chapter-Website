@@ -1,25 +1,48 @@
-name: CI react!
+name: CD react!
 
 on: 
-  pull_request:
+  push:
     branches:
       - master
 
 jobs: 
-  build: 
+  build-and-deploy: 
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v2
+        
+      - name: showing credentials
+        run: echo ${{ secrets.AZURE_CREDENTIALS }}      
+
       - uses: actions/setup-node@v1
         with:
           node-version: 14
+
       - name: build react app
         run: |
           echo "installing dependencies"
           npm install
           echo "building project"
           npm run build
+      
+      - uses: azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-
-
+      - name: Upload to blob storage
+        uses: azure/CLI@v1
+        with:
+          azcliversion: 2.0.72
+          inlineScript: |
+              az storage blob upload-batch --account-name ias-website-dev --auth-mode key -d '$web' -s ./build
+      - name: Purge CDN endpoint
+        uses: azure/CLI@v1
+        with:
+          azcliversion: 2.0.72
+          inlineScript: |
+            az cdn endpoint purge --content-paths  "/*" --profile-name "delightful-water-0def13503.azurestaticapps.net" --name "https://content-am2.infrastructure.azurestaticapps.net" --resource-group "ias-website"
+      - name: logout
+        run: |
+              az logout
+        if: always()
 
