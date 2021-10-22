@@ -5,13 +5,15 @@ import Home from './pages/Home';
 import FixedBackg from './components/FixedBackg';
 import AboutUs from './pages/AboutUs';
 import Navbar from './components/Navbar';
+import ContactUs from './pages/ContactUs';
 
 import { Route, useLocation } from "react-router-dom";
 
 // setting routes
 const routes = [
   {path: '/' , Component:Home, name:"home"},
-  {path: '/about', Component:AboutUs, name:"about-us"}
+  {path: '/about', Component:AboutUs, name:"about-us"},
+  {path: '/contact' , Component:ContactUs, name:"contact-us"}
 ]
 
 
