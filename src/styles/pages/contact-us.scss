@@ -1,0 +1,11 @@
+.contact-us{
+    min-height: 100vh;
+    background-color: var(--dark-background);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    .horizontal-bar {
+        min-height: 500px; 
+        background-color: var(--primary-green);
+    }
+}
