@@ -8,7 +8,6 @@ export default function useRevealOne(elementRef,inputOption={}){
             threshold: 0.7,
             ...inputOption
         }
-        console.log(options)
         const inters = new IntersectionObserver((entries, observe)=>{
             entries.forEach(entry =>{
                 if(entry.isIntersecting){

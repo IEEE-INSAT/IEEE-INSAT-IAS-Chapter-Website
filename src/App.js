@@ -34,8 +34,8 @@ function App() {
       <FixedBackg/>
       <Navbar/>
       {
-        routes.map(({path, Component})=>(
-            <Route exact path={path}>
+        routes.map(({path, Component, name})=>(
+            <Route exact path={path} key={name}>
               <Component/>
             </Route>
         ))

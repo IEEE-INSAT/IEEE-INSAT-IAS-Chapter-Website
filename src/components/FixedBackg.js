@@ -18,8 +18,8 @@ export default function FixedBackg() {
                 )})`
         }}>
             {
-                wheel_positions.map(pos=>(
-                    <img src={getFromPublic(
+                wheel_positions.map((pos,index)=>(
+                    <img key={index} src={getFromPublic(
                         "/images/backgrounds/background-wheel.jpg"
                     )} alt="" className="gear" style={pos} />
                 ))

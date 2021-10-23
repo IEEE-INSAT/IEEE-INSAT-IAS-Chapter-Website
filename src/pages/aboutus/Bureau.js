@@ -27,8 +27,8 @@ export default function Bureau() {
                 <MemberImage {...chair} />
             </div>
             {
-                members.map(double=>(
-                    <div className="double container">
+                members.map((double,index)=>(
+                    <div className="double container" key={index}>
                         <MemberImage {...double[0]} />
                         <MemberImage {...double[1]} />
                     </div>

@@ -75,9 +75,20 @@ h1,h2,h3{
   line-height:1.6em;
 }
 
+.App{
+  &>div{
+    opacity:0;
+    animation: back-to-normal 500ms ease forwards;
+  }
+  &>.fixed-backg{
+    opacity: 1;
+    animation: none;
+  }
+}
+
 
 //reducing global font-size on mobile
-@media (max-width: 700px){
+@media (max-width: 750px){
   html{
     font-size: 15px
   }

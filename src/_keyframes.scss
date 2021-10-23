@@ -6,6 +6,12 @@
     }
 }
 
+@keyframes clip-path-to-normal {
+    100%{
+        clip-path: inset(0 0 0 0);
+    }
+}
+
 @keyframes disappear-left {
     100% {  
         opacity : 0 ;

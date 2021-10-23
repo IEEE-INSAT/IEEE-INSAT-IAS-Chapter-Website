@@ -30,8 +30,8 @@ export default function Numbers() {
     return (
         <div className="numbers">
             {
-                NumbersContent.map(content=>(
-                    <Number {...content}/>
+                NumbersContent.map((content,index)=>(
+                    <Number {...content} key={index} />
                 ))
             }
         </div>
