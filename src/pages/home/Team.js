@@ -48,7 +48,7 @@ export default function Team() {
                 <>
                 <Tesla/>
                 {working_members.map(({name,quote,image},index)=>(
-                    <div className={`member ${(index%2)?"inverse":""}`}>
+                    <div className={`member ${(index%2)?"inverse":""}`} key={index}>
                         <div className="container">
                             <SpinImage image={image} />
                             <Content name={name} quote={quote} />

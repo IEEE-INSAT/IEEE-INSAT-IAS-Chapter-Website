@@ -24,15 +24,11 @@
             font-weight: 700;
             font-size: var(--big-font);
             margin-bottom:20px;
-            opacity: 0; transform:translateY(-100%);
-            animation: back-to-normal 700ms ease forwards 200ms;
         }
 
         // the paragraphs
         p{
             font-size: var(--big-paragraph);
-            opacity: 0; transform:translateY(-100%);
-            animation: back-to-normal 700ms ease forwards 200ms;
         }
 
         // the last paragraph should be a little bit bigger

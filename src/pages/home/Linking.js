@@ -30,8 +30,8 @@ export default function Linking() {
             <TextLineReveal> <h2>Linking Research To Practice</h2> </TextLineReveal>
             <TextLineReveal delay={300}> <p>Linking Engineers To Worldwide Expertise</p> </TextLineReveal>
             <div className="card-container">
-                {cardsContent.map(content=>(
-                    <Card {...content}/>
+                {cardsContent.map((content,index)=>(
+                    <Card {...content} key={index}/>
                 ))}
             </div>
         </div>
