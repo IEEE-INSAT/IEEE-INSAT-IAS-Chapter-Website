@@ -27,11 +27,14 @@ html{
   //colors 
   --dark-background:#051400c2 ;
   --less-dark-background: #05140091;
-  --primary-green: #0FBF00;
-  --primary-transparent-green: #0a7700b6;
-  --secondary-green:#A4BE00;
+  --primary-green:#2e964d ;
+  //#2e964d
+  --primary-transparent-green:#2e964dd0; 
+  // #0a7700b6;
+  --secondary-green:#0ea700;
   --primary-white: white;
   --dark-green: #345308;
+  --white-layer: rgba(255, 255, 255, 0.89);
 }
 
 //start template
@@ -44,7 +47,7 @@ html{
 body{
   position: relative; 
   z-index : 1; 
-  line-height: 1.6em ;
+  line-height: 1.8em ;
   font-family: 'Roboto', sans-serif;
 }
 

@@ -14,8 +14,15 @@ nav{
     }
 
     //fixing logo height
-    img{
+    .logos{
         height: 75px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+        img{
+            height: 100%;
+            transition: transform 500ms ease;
+        }
     }
 
     //navbar buttons
@@ -23,6 +30,7 @@ nav{
         display:flex;
         a{
             margin-left: 25px;
+            font-family: 'sansation', 'Roboto', sans-serif;
             font-size: var(--little-big-font) ;
             color: white;
             text-decoration: none;
@@ -50,12 +58,13 @@ nav{
     //the show nav button on mobile
     .nav-button{
         display: none;
+        cursor: pointer;
     }
-    .line{
-        width: 25px; height: 3px;
-        margin: 5px 0 ;
+    .line{ 
+        height: 3px;
         background-color: white;
         transition: transform 300ms ease;
+        border-radius: 5px;
     }
     .line:first-of-type, .line:last-of-type{
         transform-origin: right;
@@ -64,14 +73,14 @@ nav{
     // the show nav after clicked
     .nav-button.clicked{
         .line:first-of-type{
-            transform: translateY(-0.5px) rotate(-45deg);
+            transform: translateY(0.5px) rotate(-45deg);
             
         }
         .line:nth-of-type(2){
             opacity: 0;
         }
         .line:last-of-type{
-            transform: translateY(0.5px) rotate(45deg);
+            transform: translateY(-0.5px) rotate(45deg);
         }
     }
 }
@@ -86,6 +95,11 @@ nav.scrolled{
     .container{
         padding: 0;
     }
+    .logos{
+        img{
+            transform: translateY(-100%);
+        }
+    }
 }
 
 
@@ -94,7 +108,11 @@ nav.scrolled{
     nav{
         //showing the show nav button
         .nav-button{
-            display: block;
+            $size: 22px;
+            display: flex;
+            flex-direction: column;
+            width: 25px; height: $size;
+            justify-content: space-between;
         }
 
         //restyling the ul buttons
