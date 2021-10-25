@@ -11,7 +11,8 @@ export default function TextLineReveal({children, delay=0}) {
     return (
         <div id="text-line-reveal" ref={lineRef}>
             <div style={{
-                transitionDelay: `${delay}ms`
+                transitionDelay: `${delay}ms`,
+                padding: '4px 0'
             }}>
                 {children}
             </div>

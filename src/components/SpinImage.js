@@ -5,17 +5,22 @@ import { faCog } from '@fortawesome/free-solid-svg-icons'
 import '../styles/components/spin-image.scss'
 import useRevealOne from '../shared/hooks/useRevealOne'
 
-export default function SpinImage({image}) {
+export default function SpinImage({image, width=null, height=null}) {
 
     const imageRef = useRef(null) ;
 
     useRevealOne(imageRef);
 
+    const widthAndHeight= {
+        width: width? width: '300px',
+        theight: height? height: '300px'
+    }
+
     return (
-        <div className="image" ref={imageRef}>
+        <div className="image" ref={imageRef} style={widthAndHeight} >
             <FontAwesomeIcon icon={faCog}/>
-            <div className="img" alt="" >
-                <img src={getFromPublic(image)} alt="" />
+            <div className="img" alt=""  >
+                <img src={getFromPublic(image)} alt=""/>
             </div>
         </div>
     )

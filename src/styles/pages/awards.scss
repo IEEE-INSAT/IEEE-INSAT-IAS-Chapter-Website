@@ -1,0 +1,124 @@
+.awards{
+    // variables
+    $line-width: 20px;
+    $one-side-height: 300px;
+    $one-side-margin: 50px 0;
+
+    //work
+    color: white;
+    .scroll{
+        background-color: var(--dark-background);
+        position: relative;
+    }
+    .whole-width {
+        display :flex;
+        padding:$one-side-margin;
+        .one-side{
+            width: calc(50% - 10px);
+            height: $one-side-height;
+            background-color: #D6D6D6;
+            color: black;
+            overflow-y: auto;
+            padding: 30px 50px;
+            h2{
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+            transition: transform 500ms ease,
+                opacity 500ms ease 200ms;
+            transform: scaleX(0.6);
+            opacity: 0;
+            &.visible{
+                transform: none;
+                opacity: 1;
+            }
+        }
+    }
+    .whole-width:nth-of-type(odd){
+        justify-content: flex-end;
+        .one-side{
+            transform-origin: left;
+        }
+        
+    }
+    .whole-width:nth-of-type(even){
+        justify-content: flex-start;
+       .one-side{
+           transform-origin: right;
+       }
+    }
+
+    .line {
+        position: absolute;
+        top: 0; left:50%;
+        transform: translateX(-50%);
+        height: 100%;
+        width: $line-width;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+    }
+
+    .trophy{
+        height: $one-side-height;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:$one-side-margin;
+        box-sizing: content-box;
+        .trophy-circle{
+            $size: 80px;
+            height: $size;
+            width: $size; 
+            background-color: var(--primary-green);
+            border: 3px solid white;
+            border-radius: 50%;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            margin-top:20px;
+            svg{
+                font-size:30px;
+                transition: transform 300ms ease;
+            }
+        }
+        .svg{
+            display: flex;
+            justify-content: center;
+            height:center;
+            position: relative;
+        }
+        .svg::after{
+            content: '';
+            position: absolute; top: 100%; left: 0;
+            width: 0; height: 3px;
+            background-color: white;
+            transition: width 300ms ease;
+        }
+    }
+
+    .trophy.visible{
+        .svg::after{
+            width:100%;
+        }
+        svg{
+            transform: translateY(-5px);
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .awards {
+        .line{
+            left: 30px;
+            transform: none;
+        }
+        .whole-width{
+            justify-content: flex-end !important;
+            .one-side{
+                width: calc(100% - 30px);
+                padding-left: 60px;
+                padding-right: 10px;
+            }
+        }
+    }
+}

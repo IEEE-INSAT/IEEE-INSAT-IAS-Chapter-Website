@@ -47,7 +47,7 @@ html{
 body{
   position: relative; 
   z-index : 1; 
-  line-height: 1.8em ;
+  line-height: 1.6em ;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -89,13 +89,34 @@ h1,h2,h3{
   }
 }
 
-
 //reducing global font-size on mobile
 @media (max-width: 750px){
   html{
     font-size: 15px
   }
 }
+
+//scroll bar 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-green);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-green);
+}
+
 
 @import 'styles/pages/home';
 @import 'styles/components/fixed-backg'
