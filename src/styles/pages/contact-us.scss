@@ -138,7 +138,7 @@
 @media  (max-width: 700px) {
     .contact-us{
         .horizontal-bar{
-            flex-direction: column;
+            display:block;
             margin: 200px 0;
         }
         .form-information{
@@ -149,6 +149,7 @@
         }
         .map{
             clip-path: none;
+            width: 100%;
         }
     }
 }
