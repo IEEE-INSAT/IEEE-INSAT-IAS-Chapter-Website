@@ -33,7 +33,7 @@ function App() {
   const [windowLoaded, setWindowLoaded] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false)
   const [enter, setEnter] = useState(false);
-  
+
   //scroll to top on route change
   useEffect(() => {
     window.scrollTo({
@@ -85,7 +85,6 @@ function App() {
       setEnter
     }}>
       <Loading addedClass="cos-left" />
-      <Loading addedClass="cos-right" />
     </loadingContext.Provider>
     </>
   );
