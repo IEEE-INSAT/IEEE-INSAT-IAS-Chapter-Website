@@ -17,6 +17,21 @@ function Input({type,name,id, inputRef }){
     )
 }
 
+function TextArea({type,name,id, inputRef }){
+    return (
+        <div style={{
+            display: 'flex',
+            flexDirection:'column'
+        }} className={name}>
+            <label htmlFor={id}> {name}: </label>
+            <div className="input-container">
+                <textarea type={type} name={name} id={id} ref={inputRef} placeholder={name} />
+                <div className="line"></div>
+            </div>
+        </div>
+    )
+}
+
 export default function ContactUs() {
 
     const nameRef = useRef();
@@ -46,7 +61,7 @@ export default function ContactUs() {
                         <Input type="text" name="Name" id="name" inputRef={nameRef} />
                         <Input type="email" name="Email" id="email" inputRef={emailRef} />
                     </div>
-                    <Input type="text" name="Description" id="description" inputRef={descRef} />
+                    <TextArea type="text" name="Description" id="description" inputRef={descRef} />
                     <button onClick={handleSubmit}> submitting</button>
                 </form>
             </div>

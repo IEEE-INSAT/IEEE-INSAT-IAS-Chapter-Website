@@ -18,8 +18,9 @@ export default function Number({title,number, image}) {
         const inters = new IntersectionObserver((entries, observe)=>{
             entries.forEach(entry =>{
                 if(entry.isIntersecting && (!counted)){
+                    current.classList.add("visible");
+                    counted =true
                     const interval = setInterval(()=>{
-                        counted =true
                         setCounter(prev=>{
                             // clear interval if we reach the number
                             if(!(prev<number)){
@@ -29,7 +30,7 @@ export default function Number({title,number, image}) {
                             //else return +1
                             return prev+1;
                         })
-                    }, 100);
+                    }, 3000/number);
                 }
             })
         },options)
@@ -43,9 +44,7 @@ export default function Number({title,number, image}) {
     },[number])
 
     return (
-        <div ref={cardRef} style={{
-            textAlign:'center'
-        }} >
+        <div ref={cardRef} className="number-card">
             <img src={image} alt="" />
             <h3> {title} </h3>
             <p> {counter} </p>

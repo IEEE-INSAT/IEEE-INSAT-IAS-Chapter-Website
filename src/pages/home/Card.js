@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import useRevealOne from '../../shared/hooks/useRevealOne'
 
 export default function Card({title,image,text}) {
+
+    const cardRef = useRef();
+    useRevealOne(cardRef);
+
     return (
-        <div className="card">
+        <div className="card" ref={cardRef}>
             <span className="image-contain">
                 <img src={image} alt="" />
             </span>

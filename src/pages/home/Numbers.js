@@ -28,7 +28,7 @@ const NumbersContent= [
 
 export default function Numbers() {
     return (
-        <div className="numbers">
+        <div className="numbers" style={{backgroundImage:`url(${getFromPublic("/images/backgrounds/industry4.jpg")})`}}>
             {
                 NumbersContent.map((content,index)=>(
                     <Number {...content} key={index} />

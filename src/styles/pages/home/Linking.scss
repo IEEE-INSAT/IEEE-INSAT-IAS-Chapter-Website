@@ -9,6 +9,7 @@
     justify-content: center;
     text-align:center;
     padding: 50px 0;
+    overflow-x: hidden;
 
     // layer above background
     &::after{
@@ -34,6 +35,20 @@
     }
 
     //card style
+    .card{
+        opacity: 0;
+        transition: opacity 2000ms ease ,
+                transform 2000ms ease ;
+    }
+    .card:nth-of-type(odd){
+        transform: translateX(100px)
+    }
+    .card:nth-of-type(even){
+        transform: translateX(-100px)
+    }
+    .card.visible{
+        transform: none; opacity: 1;
+    }
     .card{
         width: 320px; 
         max-width: 100%;

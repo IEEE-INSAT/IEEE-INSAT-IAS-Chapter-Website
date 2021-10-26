@@ -14,7 +14,7 @@ export default function Contact() {
             </div>
             <div className="container">
                 <div className="cos-left">
-                    <img src={getFromPublic('/images/logos/white.png')} alt="" />
+                    <img src={getFromPublic('/images/logos/white.png')} className="logo" alt="" />
                     <p>
                     IAS enriches both its individual members and the industry as a whole through the sharing of specific industry-related solutions.
                     </p>

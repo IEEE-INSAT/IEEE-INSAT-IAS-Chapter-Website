@@ -7,7 +7,7 @@
 
     //the disover polygon
     .green-part{
-        background: linear-gradient($primary-green, $secondary-green);
+        background: linear-gradient(var(--primary-green), var(--secondary-green));
         color: $primary-white;
         padding: 90px 0;
         max-width: 100%;

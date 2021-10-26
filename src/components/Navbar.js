@@ -27,7 +27,10 @@ export default function Navbar() {
     return (
         <nav className={(scrolled?"scrolled": "")+" "+(clicked?"clicked":"")}>
             <div className="container ">
-                <img src={getFromPublic("/images/logos/main.png")} alt="" />
+                <div className="logos">
+                    <img src={getFromPublic("/images/logos/main.png")} alt="" />
+                    <img src={getFromPublic("/images/logos/white.png")} alt="" />
+                </div>
                 <ul>
                     <NavLink to="/" exact activeClassName="current">Home</NavLink>
                     <NavLink to="/about" exact activeClassName="current">About Us</NavLink>
