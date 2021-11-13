@@ -38,13 +38,6 @@ function App() {
   
   //run when video is loaded
   useEffect(()=>{
-    if(!videoLoaded) return ;
-
-    //if window is already ready go to page
-    if(document.readyState==="complete"){
-      setWindowLoaded(true)
-      return;
-    }
 
     // if not listen to when it's ready
     const load=()=>{
@@ -56,7 +49,7 @@ function App() {
     return ()=>{
       window.removeEventListener('load', load);
     }
-  },[videoLoaded])
+  },[])
 
   useEffect(()=>{
     document.body.style.overflowY="hidden";
