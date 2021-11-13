@@ -109,7 +109,7 @@ const LoadingScreen = ()=>{
   const { windowLoaded } = useContext(loadingContext)
 
   return (
-    <div className={"loading "+(windowLoaded?"loaded":"")}>
+    <div className={"loading "+(windowLoaded?"loaded":"")} >
       <FontAwesomeIcon icon={faCog} />
     </div>
   )
