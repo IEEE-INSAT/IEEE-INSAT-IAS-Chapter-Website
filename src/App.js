@@ -30,123 +30,125 @@ const routes = [
 function App() {
 
   const location= useLocation();
+  
+  //loading states
   const [windowLoaded, setWindowLoaded] = useState(false);
+  const [videoLoaded, setVideoLoaded] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false)
-  const [enter, setEnter] = useState(false);
+  
+  //run when video is loaded
+  useEffect(()=>{
+    if(!videoLoaded) return ;
+
+    //if window is already ready go to page
+    if(document.readyState==="complete"){
+      setWindowLoaded(true)
+      return;
+    }
+
+    // if not listen to when it's ready
+    const load=()=>{
+      setWindowLoaded(true);
+    }
+
+    window.addEventListener('load',load);
+
+    return ()=>{
+      window.removeEventListener('load', load);
+    }
+  },[videoLoaded])
+
+  useEffect(()=>{
+    document.body.style.overflowY="hidden";
+  },[])
+
+  useEffect(()=>{
+    if(!videoEnded) return;
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    })
+    document.body.style.overflowY="auto"
+  },[videoEnded])
 
   //scroll to top on route change
   useEffect(() => {
     window.scrollTo({
       top:0
     })
-  }, [location,windowLoaded])
+  }, [location])
 
-  //once everythig loads give t
-  useEffect(()=>{
-    document.body.style.overflowY='hidden'
-
-    const loadedFunct= ()=>{
-      setWindowLoaded(true)
-      console.log("loaded")
-    }
-
-    window.addEventListener('load',loadedFunct)
-
-    return ()=>{
-      window.removeEventListener('load', loadedFunct);
-    }
-  },[])
-
-  useEffect(()=>{
-    if(!enter) return; 
-    document.body.style.overflowY='auto'
-  },[enter])
 
   return (
     <>
-    <div className={"App "+(enter?'':'invisible')}>
-      <FixedBackg/>
-      <Navbar/>
-      {
-        routes.map(({path, Component, name})=>(
-            <Route exact path={path} key={name}>
-              <Component/>
-            </Route>
-        ))
-      }  
-    </div>
-
-    {/* loading part */}
-    <loadingContext.Provider value={{
-      loaded: windowLoaded,
-      videoEnded,
-      setVideoEnded,
-      enter, 
-      setEnter
-    }}>
-      <Loading addedClass="cos-left" />
-    </loadingContext.Provider>
+      <div className={"App "+(videoEnded?"":"invisible")}>
+        <FixedBackg/>
+        <Navbar/>
+        {
+          routes.map(({path, Component, name})=>(
+              <Route exact path={path} key={name}>
+                <Component/>
+              </Route>
+          ))
+        }  
+      </div>
+      <loadingContext.Provider value={{
+        windowLoaded,
+        videoLoaded,setVideoLoaded,
+        videoEnded,setVideoEnded
+      }}>
+        <LoadingScreen/>
+        <LoadingVideo/>
+      </loadingContext.Provider>
     </>
   );
 }
 
+const LoadingScreen = ()=>{
 
-const Loading = ({addedClass})=>{
-
-  const {
-    loaded,
-    videoEnded,
-    setVideoEnded,
-    enter, 
-    setEnter
-  }= useContext(loadingContext)
-
-  const myRef= useRef();
-  const videoRef= useRef();
-
-  //when video ends
-  useEffect(()=>{
-    //show wait message
-    if(!videoEnded) return ;
-    const current= myRef.current;
-    current.classList.add('video-ended')
-  },[videoEnded])
-
-  //when video ends and loaded
-  useEffect(()=>{
-    if(!loaded) return ;
-    //show enter button
-    const current= myRef.current;
-    current.classList.add("show-button")
-    
-  },[loaded])
-
-  
+  const { windowLoaded } = useContext(loadingContext)
 
   return (
-    <>
-    <div className={"loading "+addedClass+" "+(enter?'entered':'')} ref={videoRef}>
+    <div className={"loading "+(windowLoaded?"loaded":"")} >
+      <FontAwesomeIcon icon={faCog} />
+    </div>
+  )
+}
+
+const LoadingVideo = ()=>{
+  const videoRef = useRef()
+  const { 
+    windowLoaded,
+    setVideoLoaded,
+    videoEnded,setVideoEnded
+  } = useContext(loadingContext);
+
+  useEffect(()=>{
+    if(!windowLoaded) return;
+    videoRef.current.play();
+  },[windowLoaded])
+
+  return (
+    <div className={"loading-video "+(videoEnded?"ended":"")}>
       <video 
         src={getFromPublic("/videos/enter.mp4")} 
-        muted 
-        preload="auto" 
-        autoPlay
-        onEnded={()=>{setVideoEnded(true)}}  
+        preload="auto"
+        muted
+        ref={videoRef}
+        onLoadedData={(e)=>{
+          if(e.target.readyState===4)
+            setVideoLoaded(true);
+        }}
+        onEnded={()=>{
+          setVideoEnded(true);
+        }}
       >
       </video>
     </div>
-    <div className={"text-layer "+(enter?'entered':'')} ref={myRef}>
-      <div className="wait">
-        <p>Loading...</p>
-        <FontAwesomeIcon icon={faCog}/>
-      </div>
-      <button className="enter-button" onClick={()=>{setEnter(true)}} disabled={(!loaded)}>
-        <p>Enter</p>
-      </button>
-    </div>
-    </>
   )
 }
+
+
 
 
 

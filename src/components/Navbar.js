@@ -32,7 +32,9 @@ export default function Navbar() {
                     <img src={getFromPublic("/images/logos/white.png")} alt="" />
                 </div>
                 <ul>
-                    <NavLink to="/" exact activeClassName="current">Home</NavLink>
+                    <NavLink to="/" exact activeClassName="current">
+                        Home
+                    </NavLink>
                     <NavLink to="/about" exact activeClassName="current">About Us</NavLink>
                     <NavLink to="/awards" exact activeClassName="current">Awards</NavLink>
                     <NavLink to="/activities" exact activeClassName="current">Activities</NavLink>
