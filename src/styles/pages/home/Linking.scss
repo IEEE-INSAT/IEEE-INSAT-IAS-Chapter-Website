@@ -41,10 +41,10 @@
                 transform 2000ms ease ;
     }
     .card:nth-of-type(odd){
-        transform: translateX(100px)
+        transform: translateX(20%)
     }
     .card:nth-of-type(even){
-        transform: translateX(-100px)
+        transform: translateX(-20%)
     }
     .card.visible{
         transform: none; opacity: 1;
