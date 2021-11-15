@@ -137,6 +137,12 @@ const LoadingVideo = ()=>{
         }}
       >
       </video>
+      <button 
+        className={"enter-button "+(windowLoaded?"":"undisplayed")}
+        onClick={()=>{setVideoEnded(true)}}
+      >
+        Enter
+      </button>
     </div>
   )
 }

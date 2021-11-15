@@ -164,6 +164,40 @@ h1,h2,h3{
   &.ended{
     transform: translateY(-100%);
   }
+  .enter-button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform : translateX(-50%);
+    background: none;
+    color: var(--primary-green);
+    border:none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: var(--little-big-font);
+    cursor: pointer;
+    z-index: 1;
+    &::after{
+      content: '';
+      position: absolute; 
+      top: 0; left: 0; 
+      width: 100%;height: 100%;
+      background-color: white;
+      z-index: -1;
+      border-radius: 50%;
+      transition: transform 300ms ease;
+    }
+    &:hover::after{
+      transform: scale(1.2);
+    }
+  }
+  
+}
+
+.undisplayed{
+  display:none;
 }
 
 .dark-back{
