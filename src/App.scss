@@ -166,6 +166,10 @@ h1,h2,h3{
   }
 }
 
+.dark-back{
+  background-color: var(--dark-background);
+}
+
 
 @import 'styles/pages/home';
 @import 'styles/components/fixed-backg'

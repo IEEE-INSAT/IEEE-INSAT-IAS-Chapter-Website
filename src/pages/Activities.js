@@ -9,6 +9,9 @@ import { getFromPublic } from '../shared/functions/public'
 import useRevealOne from '../shared/hooks/useRevealOne'
 
 import activities from '../shared/db/activities'
+import HorGallery from './activities/HorGallery'
+import gallery from '../shared/db/gallery'
+import thisyear from '../shared/db/thisyear'
 import { types } from '../shared/db/activities'
 
 export default function Events() {
@@ -32,6 +35,43 @@ export default function Events() {
                     </p>
                 </TextLineReveal>
             </Header>
+            <div className="gallery-container">
+                <h1 className="presentation-title">Team Buildings Gallery: </h1>
+                <HorGallery>
+                    {
+                        gallery.map((img,index)=>(
+                            <img key={index} src={getFromPublic(img)} className="gallery-image" alt="team building" />
+                        ))
+                    }
+                </HorGallery>
+                <br />
+                <br />
+
+                <h1 className="presentation-title">This year's events: </h1>
+                <HorGallery>
+                    {
+                        thisyear.map(({
+                            title,
+                            image,  
+                            status,
+                            description
+                        },index)=>(
+                            <div className="gallery-card" key={index}>
+                                <img  src={getFromPublic(image)} alt="activity" className="gallery-card-img" />
+                                <div className="content">
+                                    <h3> {title} </h3>
+                                    <small className={status}> {status} </small>
+                                    <p> {description} </p>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </HorGallery>
+
+                <br />
+                <br />
+
+            </div>
             <div className="navbar" style={{backgroundImage: `url('${getFromPublic("/images/backgrounds/it-research.jpg")}')`}}>
                 {
                     types.map((type,index)=>(

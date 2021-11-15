@@ -1,37 +1,17 @@
-import React, { useEffect,useRef } from 'react'
+import React, { useRef } from 'react'
 import { getFromPublic } from '../shared/functions/public'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCog } from '@fortawesome/free-solid-svg-icons'
 import '../styles/components/member-image.scss'
 import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import useRevealOneTime from '../shared/hooks/useRevealOneTime'
 
 export default function MemberImage({name, position, facebook, linkedin,image}) {
 
     const memberRef = useRef(null);
 
     //changing class when revealed
-    useEffect(()=>{
-        const current = memberRef.current;
-
-        const options ={
-            threshold: 0.8
-        }
-
-        const inters = new IntersectionObserver((entries, observe)=>{
-            entries.forEach(entry =>{
-                if(entry.isIntersecting){
-                    entry.target.classList.add("visible")
-                    observe.disconnect()
-                }
-            })
-        },options)
-
-        inters.observe(current)
-
-        return ()=>{
-            inters.disconnect(current);
-        }
-    },[])
+    useRevealOneTime(memberRef);
 
     return (
         <div className="bureau-member" ref={memberRef} >

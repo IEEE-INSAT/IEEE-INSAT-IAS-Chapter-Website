@@ -1,10 +1,10 @@
 import React, { useRef } from 'react'
-import useRevealOne from '../../shared/hooks/useRevealOne'
+import useRevealOneTime from '../../shared/hooks/useRevealOneTime'
 
 export default function Card({title,image,text}) {
 
     const cardRef = useRef();
-    useRevealOne(cardRef);
+    useRevealOneTime(cardRef);
 
     return (
         <div className="card" ref={cardRef}>
