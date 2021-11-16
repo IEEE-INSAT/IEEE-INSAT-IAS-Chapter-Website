@@ -7,7 +7,7 @@ import AboutUs from './pages/AboutUs';
 import Navbar from './components/Navbar';
 import ContactUs from './pages/ContactUs';
 
-import { Route, useLocation } from "react-router-dom";
+import { Route, useLocation,Routes } from "react-router-dom";
 import Awards from './pages/Awards';
 import Activities from './pages/Activities';
 import { getFromPublic } from './shared/functions/public';
@@ -77,13 +77,13 @@ function App() {
       <div className={"App "+(videoEnded?"":"invisible")}>
         <FixedBackg/>
         <Navbar/>
-        {
-          routes.map(({path, Component, name})=>(
-              <Route exact path={path} key={name}>
-                <Component/>
-              </Route>
-          ))
-        }  
+        <Routes>
+          {
+            routes.map(({path, Component, name})=>(
+                <Route path={path} key={name} element={<Component/>} />
+            ))
+          }  
+        </Routes>
       </div>
       <loadingContext.Provider value={{
         windowLoaded,
