@@ -8,7 +8,7 @@
 
 //setting global font-size and selection color
 html{
-  font-size: 17px;
+  font-size: 16px;
 }
 ::selection{
   color: rgb(84, 160, 84);
@@ -122,6 +122,7 @@ h1,h2,h3{
 .App{
   transition: transform 1000ms ease 200ms;
   transform-origin: top;
+  overflow-x: hidden;
 }
 .App.invisible{
   transform: scale(0.5) translateY(150vh);
@@ -204,6 +205,17 @@ h1,h2,h3{
   background-color: var(--dark-background);
 }
 
+.Completed {
+  color: red;
+}
+
+.OnGoing {
+  color: green;
+}
+
+.Upcoming {
+  color: rgb(52, 52, 167);
+}
 
 @import 'styles/pages/home';
 @import 'styles/components/fixed-backg'

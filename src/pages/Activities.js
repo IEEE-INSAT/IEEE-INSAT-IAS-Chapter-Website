@@ -13,6 +13,7 @@ import HorGallery from './activities/HorGallery'
 import gallery from '../shared/db/gallery'
 import thisyear from '../shared/db/thisyear'
 import { types } from '../shared/db/activities'
+import { useShow } from "../shared/contexts/EsShow";
 
 export default function Events() {
     const [current, setCurrent] = useState("training");
@@ -21,7 +22,7 @@ export default function Events() {
         return activities.filter(activity=>(activity.type===current));   
     },[current])
 
-    
+    const {triggerShow} = useShow();
 
     return (
         <div className="activities">
@@ -56,12 +57,16 @@ export default function Events() {
                             status,
                             description
                         },index)=>(
-                            <div className="gallery-card" key={index}>
+                            <div className="gallery-card" key={index}
+                                onClick={()=>{
+                                    triggerShow({title,image, status,description})
+                                }}
+                            >
                                 <img  src={getFromPublic(image)} alt="activity" className="gallery-card-img" />
                                 <div className="content">
                                     <h3> {title} </h3>
                                     <small className={status}> {status} </small>
-                                    <p> {description} </p>
+                                    <p> {description.substring(0,100)}... </p>
                                 </div>
                             </div>
                         ))
@@ -93,9 +98,12 @@ export default function Events() {
                     ))}
                 </div>
             </div>
+            
         </div>
     )
 }
+
+
 
 function Content({name, description}) {
 

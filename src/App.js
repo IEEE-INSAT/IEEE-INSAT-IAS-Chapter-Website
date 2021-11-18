@@ -13,6 +13,8 @@ import Activities from './pages/Activities';
 import { getFromPublic } from './shared/functions/public';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog } from '@fortawesome/free-solid-svg-icons';
+import EventShow from './components/EventShow';
+import { EsShowProvider } from './shared/contexts/EsShow';
 
 //lading context
 const loadingContext = createContext();
@@ -25,6 +27,7 @@ const routes = [
   {path: '/awards' , Component:Awards, name:"awards"},
   {path: '/activities' , Component:Activities, name:"activities"}
 ]
+
 
 
 function App() {
@@ -72,8 +75,13 @@ function App() {
   }, [location])
 
 
+  
+
+
+
   return (
     <>
+      <EsShowProvider>
       <div className={"App "+(videoEnded?"":"invisible")}>
         <FixedBackg/>
         <Navbar/>
@@ -84,7 +92,9 @@ function App() {
             ))
           }  
         </Routes>
+        <EventShow/>
       </div>
+      </EsShowProvider>
       <loadingContext.Provider value={{
         windowLoaded,
         videoLoaded,setVideoLoaded,

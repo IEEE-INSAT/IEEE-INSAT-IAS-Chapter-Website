@@ -49,7 +49,7 @@ nav{
                 transform: none;
                 transform-origin: left;
             }
-            &.current::after{
+            &.active::after{
                 transform: none;
             }
         }
