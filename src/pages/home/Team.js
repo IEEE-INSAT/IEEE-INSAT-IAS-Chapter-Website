@@ -9,19 +9,14 @@ import TextLineReveal from '../../components/TextLineReveal'
 
 const working_members = [
     {
-        name: "Omar Kouki",
+        name: "Edam Chayeb",
         quote : "I believe that making a change or bringing success is possible only after grabbing the opportunity when it comes and the thing I appreciate most about IEEE is that it has given me the opportunity to grow and balance between studies, work and life.",
-        image: "/images/pictures/members/chair.jpg"
+        image: "/images/pictures/members/edam.jpg"
     },
     {
-        name: "Maryem Abdellatif",
+        name: "Mohamed Bouchnak",
         quote : "I met a lot of people, learnt a lot and developped my hard skills as well as my softs skills and all that thanks to the benefits and opportunities given by IAS.",
-        image: "/images/pictures/members/HRManager.jpg"
-    },
-    {
-        name: "Mohamed Jedidi",
-        quote : "I discovered how passionate I am about reading and writing. I’ve learnt that getting out of my comfort zone is the only way for me to evolve both personally and professionally.",
-        image: "/images/pictures/members/trainingManager.jpg"
+        image: "/images/pictures/members/bouchnak.jpg"
     }
 ]
 

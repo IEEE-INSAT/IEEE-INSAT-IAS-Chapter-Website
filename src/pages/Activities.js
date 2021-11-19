@@ -89,9 +89,9 @@ export default function Events() {
                 }
             </div>
             <div className="activities-container">
-                <div className="container">
+                <div className="container" key={current}>
                     {currentActiv.map((activity,index)=>(
-                        <div className="activity">
+                        <div className="activity" key={index}>
                             <SpinImage image={activity.image} width="370px" height='300px' />
                             <Content name={activity.title} description={activity.description} />
                         </div>
