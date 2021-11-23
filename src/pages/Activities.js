@@ -3,7 +3,7 @@ import '../styles/pages/activities.scss'
 
 import Header from '../components/Header'
 import TextLineReveal from '../components/TextLineReveal'
-import SpinImage from '../components/SpinImage'
+// import SpinImage from '../components/SpinImage'
 
 import { getFromPublic } from '../shared/functions/public'
 import useRevealOne from '../shared/hooks/useRevealOne'
@@ -14,6 +14,7 @@ import gallery from '../shared/db/gallery'
 import thisyear from '../shared/db/thisyear'
 import { types } from '../shared/db/activities'
 import { useShow } from "../shared/contexts/EsShow";
+import ImageLoad from '../components/ImageLoad'
 
 export default function Events() {
     const [current, setCurrent] = useState("training");
@@ -41,7 +42,7 @@ export default function Events() {
                 <HorGallery>
                     {
                         gallery.map((img,index)=>(
-                            <img key={index} src={getFromPublic(img)} className="gallery-image" alt="team building" />
+                            <ImageLoad key={index} src={getFromPublic(img)} className="gallery-image" alt="team building" />
                         ))
                     }
                 </HorGallery>
@@ -62,7 +63,7 @@ export default function Events() {
                                     triggerShow({title,image, status,description})
                                 }}
                             >
-                                <img  src={getFromPublic(image)} alt="activity" className="gallery-card-img" />
+                                <ImageLoad spinColor="grey"  src={getFromPublic(image)} alt="activity" className="gallery-card-img" />
                                 <div className="content">
                                     <h3> {title} </h3>
                                     <small className={status}> {status} </small>
@@ -77,7 +78,7 @@ export default function Events() {
                 <br />
 
             </div>
-            <div className="navbar" style={{backgroundImage: `url('${getFromPublic("/images/backgrounds/it-research.jpg")}')`}}>
+            <div className="navbar" style={{backgroundImage: `url('${getFromPublic("/images/backgrounds/industry4.jpg")}')`}}>
                 {
                     types.map((type,index)=>(
                         <button 
@@ -92,7 +93,7 @@ export default function Events() {
                 <div className="container" key={current}>
                     {currentActiv.map((activity,index)=>(
                         <div className="activity" key={index}>
-                            <SpinImage image={activity.image} width="370px" height='300px' />
+                            <ImageLoad src={activity.image} width="370px" height='300px' className="activity-image" alt="activity" />
                             <Content name={activity.title} description={activity.description} />
                         </div>
                     ))}

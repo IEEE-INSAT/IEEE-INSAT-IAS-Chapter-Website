@@ -5,7 +5,7 @@ import TextLineReveal from '../../components/TextLineReveal'
 
 export default function Know() {
     return (
-        <div className="know" style={{backgroundImage:`url('${getFromPublic("/images/backgrounds/it-research.jpg")}')`}}>
+        <div className="know" style={{backgroundImage:`url('${getFromPublic("/images/backgrounds/industry4.jpg")}')`}}>
             <div className="container">
                  <TextLineReveal> <h1>What you need to know</h1> </TextLineReveal>
                 <p>

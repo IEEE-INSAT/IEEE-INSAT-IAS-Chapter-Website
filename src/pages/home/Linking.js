@@ -25,7 +25,7 @@ const cardsContent = [
 export default function Linking() {
     return (
         <div className="linking" style={{
-            backgroundImage:`url('${getFromPublic("/images/backgrounds/it-research.jpg")}')`
+            backgroundImage:`url('${getFromPublic("/images/backgrounds/industry4.jpg")}')`
         }}>
             <TextLineReveal> <h2>Linking Research To Practice</h2> </TextLineReveal>
             <TextLineReveal delay={300}> <p>Linking Engineers To Worldwide Expertise</p> </TextLineReveal>

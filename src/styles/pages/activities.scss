@@ -54,9 +54,10 @@
                 margin-bottom: 30px;
             }
         }
+        align-items: center;
     }
     .activity:nth-of-type(even){
-        .image{
+        .activity-image{
             order: 1;
         }
     }
@@ -120,7 +121,7 @@
             }
         }
         .activity:nth-of-type(even){
-            .image{
+            .activity-image{
                 order: 0
             }
         }
