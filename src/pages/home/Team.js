@@ -27,7 +27,12 @@ const working_members = [
         name: "Jouda Ben Rhouma",
         quote : "\"You may not control all the events that happen to you, but you can decide not to be reduced by them. \"Maya Angelou",
         image: "/images/pictures/members/jouda.jpg"
-    }
+    },
+    {
+        name: "Rayene Braik",
+        quote : "\"I have no special talents. I am only passionately curious.\" -Albert Einstein",
+        image: "/images/pictures/members/rayene.jpg"
+    },
 ]
 
 function Content({name, quote}) {
