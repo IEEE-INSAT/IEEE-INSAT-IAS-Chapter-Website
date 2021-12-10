@@ -21,7 +21,7 @@ const activities = [
         title: 'Electrical Car', 
         status: 'OnGoing',
         image: '/images/thisyear/electric-car.jpg',
-        description : 'hhhhh hhhhhhhhh hhhhhhhhhhh hhhhhhhhhhh hhhhhhhhhhhh hhhhhhhhhhhh hhhhhhhhhh hhhhhhhhhhhhh hhhhhhhhhhh'
+        description : 'The goal is to fabricate a commercial electric car 🔥🔥 workshops and training session are being held to improve the knowledge of our members in order to reach that goal. 💚'
     },
     {
         title: 'PFE Journey', 
