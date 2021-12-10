@@ -10,22 +10,7 @@
     padding-bottom: 300px;
 
     //meet the team 
-    .title{
-        position: relative;
-        &::after{
-            content:'';
-            position: absolute;
-            top:100%;
-            left:0;
-            width: 0;
-            height: 3px;
-            background-color: white;
-            transition: width 700ms ease;
-        }
-        &.visible::after {
-            width: 100%;
-        }
-    }
+    
 
     //style for member next to each other
     .double{

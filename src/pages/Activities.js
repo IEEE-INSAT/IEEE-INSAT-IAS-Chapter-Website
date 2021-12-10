@@ -15,6 +15,7 @@ import thisyear from '../shared/db/thisyear'
 import { types } from '../shared/db/activities'
 import { useShow } from "../shared/contexts/EsShow";
 import ImageLoad from '../components/ImageLoad'
+import Tesla from '../shared/components/Tesla'
 
 export default function Events() {
     const [current, setCurrent] = useState("training");
@@ -78,6 +79,10 @@ export default function Events() {
                 <br />
 
             </div>
+            <div style={{backgroundColor: "var(--dark-background)"}}>
+                <Tesla/>
+            </div>
+            
             <div className="navbar" style={{backgroundImage: `url('${getFromPublic("/images/backgrounds/industry4.jpg")}')`}}>
                 {
                     types.map((type,index)=>(

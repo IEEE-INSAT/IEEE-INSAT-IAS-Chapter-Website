@@ -197,6 +197,23 @@ h1,h2,h3{
   
 }
 
+.title{
+  position: relative;
+  &::after{
+      content:'';
+      position: absolute;
+      top:100%;
+      left:0;
+      width: 0;
+      height: 3px;
+      background-color: white;
+      transition: width 700ms ease;
+  }
+  &.visible::after {
+      width: 100%;
+  }
+}
+
 .undisplayed{
   display:none;
 }

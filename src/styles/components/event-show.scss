@@ -5,7 +5,8 @@
     height: 50vh;
     background-color: white;
     z-index: 200;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: var(--primary-green);
     transform: translateX(-100%);
     transition: transform 1000ms ease;
     &.shown-event{
@@ -44,6 +45,7 @@
     border-radius: 50%;
     cursor: pointer;
 
+    border: 3px solid #ccc;
     color: white;
 
     position: fixed;
