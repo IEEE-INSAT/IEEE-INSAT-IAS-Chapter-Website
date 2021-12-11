@@ -30,7 +30,7 @@ nav{
         display:flex;
         a{
             margin-left: 25px;
-            font-family: 'sansation', 'Roboto', sans-serif;
+            font-family: var(--nav-font);
             font-size: var(--little-big-font) ;
             color: white;
             text-decoration: none;
