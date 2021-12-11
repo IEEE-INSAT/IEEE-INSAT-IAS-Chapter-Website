@@ -57,11 +57,12 @@ export default function Events() {
                             title,
                             image,  
                             status,
-                            description
+                            description,
+                            additions
                         },index)=>(
                             <div className="gallery-card" key={index}
                                 onClick={()=>{
-                                    triggerShow({title,image, status,description})
+                                    triggerShow({title,image, status,description,additions})
                                 }}
                             >
                                 <ImageLoad spinColor="grey"  src={getFromPublic(image)} alt="activity" className="gallery-card-img" />

@@ -56,9 +56,10 @@
     transition: transform 1000ms ease;
     &.shown-event {
         transform: translateY(-50%);
+        &:hover{
+            transition: transform 300ms ease;
+            transform: translateY(-50%) scale(1.1) rotate(90deg);
+        }
     }
-    &:hover{
-        transition: transform 300ms ease;
-        transform: translateY(-50%) scale(1.1) rotate(90deg);
-    }
+    
 }

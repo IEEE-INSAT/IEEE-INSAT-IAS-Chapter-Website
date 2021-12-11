@@ -1,7 +1,7 @@
 import React,{ useState } from 'react'
 import '../../styles/pages/home/latest-posts.scss'
 import latestposts from '../../shared/db/latestposts'
-import { faPenNib, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import TextLineReveal from '../../components/TextLineReveal'
 

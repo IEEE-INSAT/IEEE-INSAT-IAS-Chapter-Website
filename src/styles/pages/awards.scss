@@ -1,7 +1,7 @@
 .awards{
     // variables
     $line-width: 20px;
-    $one-side-height: 300px;
+    $one-side-height: 200px;
     $one-side-margin: 50px 0;
 
     //work
@@ -23,6 +23,7 @@
             h2{
                 font-weight: 400;
                 margin-bottom: 15px;
+                font-size: 1.5rem;
             }
             transition: transform 500ms ease,
                 opacity 500ms ease 200ms;
@@ -106,6 +107,14 @@
     }
 }
 
+@media(max-width: 1700px) {
+    .awards .whole-width .one-side{
+        h2{
+            font-size:1.4rem
+        }
+    }
+}
+
 @media (max-width: 600px){
     .awards {
         .line{
@@ -118,7 +127,11 @@
                 width: calc(100% - 30px);
                 padding-left: 60px;
                 padding-right: 10px;
+                h2{
+                    font-size:1.3rem;
+                }
             }
         }
     }
 }
+

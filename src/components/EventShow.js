@@ -14,6 +14,7 @@ export default function EventShow() {
         status,
         description, 
         image,
+        additions
     } = esShow; 
 
     const shownClass = esShowed?"shown-event": ""
@@ -25,7 +26,9 @@ export default function EventShow() {
             <h1> {title} </h1>
             <small className={status}> {status} </small>
             <p> {description} </p>
-            
+            {additions?additions.map(addition=>(
+                <p> {addition} </p>
+            )):''}
         </div>
         <FontAwesomeIcon 
             icon={faTimes} 

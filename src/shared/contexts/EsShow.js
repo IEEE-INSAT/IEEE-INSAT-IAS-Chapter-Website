@@ -20,10 +20,10 @@ export function EsShowProvider({children}) {
     })
 
     const triggerShow= ({
-        image, title, status, description
+        image, title, status, description, additions
     })=>{
         setEsShow({
-        image, title, status, description
+        image, title, status, description,additions
         })
         setEsShowed(true)
     }
