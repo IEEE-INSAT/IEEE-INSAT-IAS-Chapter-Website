@@ -38,7 +38,7 @@ html{
   --white-layer: rgba(255, 255, 255, 0.89);
 
   //fonts
-  --nav-font: 'Montserrat', sans-serif;
+  --nav-font: 'Monsterrat', sans-serif;
 }
 
 //start template
@@ -52,7 +52,7 @@ body{
   position: relative; 
   z-index : 1; 
   line-height: 1.8em ;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto';
   overflow-x: hidden;
   background-color: var(--primary-green);
 }
@@ -80,9 +80,8 @@ h3{
 }
 
 h1,h2,h3{
-  font-family: 'sansation','Ubuntu';
-  font-family: 'Montserrat', sans-serif;
-  padding-bottom: 15px;
+  font-family: var(--nav-font);
+  padding-bottom: 10px;
 }
 
 .App{

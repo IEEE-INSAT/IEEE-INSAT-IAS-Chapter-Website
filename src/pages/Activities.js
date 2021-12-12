@@ -39,7 +39,7 @@ export default function Events() {
                 </TextLineReveal>
             </Header>
             <div className="gallery-container">
-                <h1 className="presentation-title">Team Buildings Gallery: </h1>
+                <h1 className="presentation-title">Gallery: </h1>
                 <HorGallery>
                     {
                         gallery.map((img,index)=>(

@@ -1,5 +1,24 @@
 const activities = [
     {
+        title: 'IAS Annual meeting', 
+        status: 'Completed',
+        image: '/images/thisyear/annual-meeting.jpg',
+        description : "The IAS Tunisia Annual Meeting was a two-day summit that focused on industry and gathered industrial engineering students and graduates. The event’s theme was Industry 4.0: Technological Innovations For Industrial Transition. The congress was an opportunity for all the members of the IAS Student Branch Chapters to establish national and international relations with engineers and experts in futuristic technologies. The event consisted of a technical challenge, a non-technical challenge, two workshops, panel sessions, and mentorships for future engineers.",
+        additions : [
+            "Day 1: February 6th, 2020:",
+            "- Opening Ceremony",
+            "- Debate: Industry 4.0",
+            "- Neuro-Linguistic Programming Workshop",
+            "- Business Model Canvas Workshop",
+            "- Non-Technical Challenge Pitching",
+            "Day 2:",
+            "- Technical Challenge (SmartIndus Competition) Pitching Session",
+            "- Artistic Break - Theatro INSAT",
+            "- Success Stories",
+            "- Closing Ceremony"
+        ]
+    },
+    {
         title: 'Summer School', 
         status: 'Completed',
         image: '/images/thisyear/summer-school.jpg',
@@ -29,12 +48,6 @@ const activities = [
         status: 'Completed',
         image: '/images/thisyear/general-assembly.jpg',
         description : "The IEEE IAS INSAT organized in the debut of the university year a general assembly to present her activities and vision to the members for this mandate 🔥💚. In the first part, the executive board introduced to the attendees their events planned for this year such as the BootCamp, the study trip…. Secondly, they talked about their activities such as the training sessions and the industrial visits. And finally, the executive board presented their two waited projects: the smart garden and the new famous electric car project. The attendees were very excited about the adventure and they expressed their excitement by asking two many questions."
-    },
-    {
-        title: 'Sponsoring training session', 
-        status: 'Completed',
-        image: '/images/thisyear/sponsoring.jpg',
-        description : "In this workshop , our dearest HR Manager and THEATRO INSAT previous sponsoring manager MAERIEM BEN ABDELTTIF was our trainer in this session. Our members learned from her technics of communication and negotiation with sponsors. She gave them golden advice about how to talk in formal ways and be professional. The attendees were able to see how they can build a good sponsoring fold that can let them be more persuading. Finally, she concluded with a practice session were the participants were able to practice what they learned. "
     },
     {
         title: 'Electrical Car', 

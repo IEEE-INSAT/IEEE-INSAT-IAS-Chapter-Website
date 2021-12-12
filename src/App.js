@@ -21,11 +21,11 @@ const loadingContext = createContext();
 
 // setting routes
 const routes = [
-  {path: '/' , Component:Home, name:"home"},
-  {path: '/about', Component:AboutUs, name:"about-us"},
-  {path: '/contact' , Component:ContactUs, name:"contact-us"},
-  {path: '/awards' , Component:Awards, name:"awards"},
-  {path: '/activities' , Component:Activities, name:"activities"}
+  {path: '/#' , Component:Home, name:"home"},
+  {path: '/#/about', Component:AboutUs, name:"about-us"},
+  {path: '/#/contact' , Component:ContactUs, name:"contact-us"},
+  {path: '/#/awards' , Component:Awards, name:"awards"},
+  {path: '/#/activities' , Component:Activities, name:"activities"}
 ]
 
 
