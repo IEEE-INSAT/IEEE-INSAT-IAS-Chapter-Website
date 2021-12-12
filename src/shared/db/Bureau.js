@@ -49,7 +49,7 @@ const members = [
     ],
     [
         {
-            name: "Hamda BK",
+            name: "Hamda Ben Khedher",
             position:"Treasurer",
             facebook: "https://www.facebook.com/hamdabk",
             linkedin: "https://www.linkedin.com/in/hamda-ben-khedher-a755261bb/",
