@@ -1,5 +1,17 @@
 const activities = [
     {
+        title:'IEEE Region 8 Industrial Bootcamp - 2020',
+        description: "The Region 8 Industrial Bootcamp was a three -day Bootcamp with which the IEEE IAS INSAT SBC won the Region 8 Acceleration Contest 2019. The general theme of the Bootcamp was Safety 4.0: Updating safety for industry 4.0 including arc flash hazards/electrical safety, chemical/biological accidents, andcybersecurity. Working in teams, the participantsbuilt their projects from the scratch with the assistance of professional and highly-qualified trainers. The attendees were provided with a series of workshops covering both soft and technical skills and a well-equipped coworking space. A final pitching session was held on the third day to evaluate the projects and to select a winning team.The winners received a 500 TND financial aid to help them implement their project.",
+        image: '/images/pictures/events/bootcamp-2020.jpg',
+        type:"events"
+    },
+    {
+        title:'IAS Tunisia Annual Meeting - Job Fair _ 2020',
+        description: "The IAS Job Fair is the first part of the IEEE IAS Tunisia Section Annual Meeting’s program. The event was dedicated to linking students, searching for internships, from all the IAS Tunisia Section’s Student Branch Chapters with the best Tunisian enterprises and leaders in the field of industry and new technologies. The chapter had the honor to have 7 enterprises from various fields as its guests during the IAS Tunisia Annual Meeting’s Job Fair: COFI CAB, Cure Bionics, Henkel, Corail Technologie, Sartorius, and P oulina Group H o l d i ng. Each company had an individual session in the online meet where its representatives introduced attendees to the enterprise’s activity domains and internship program for the year 2021. ",
+        image: '/images/pictures/events/annual-meeting-2020.jpg',
+        type:"events"
+    },
+    {
         title:'Introduction to Computer Vision Workshop!',
         description: "Hosted on the 8th of November 2020, Mr. Muhammad Touseep, a computer engineer at the University of Engineering and Technology Taxila, Pakistan Presented to our students this Workshop in an online presentation. He introduced attendees to the field of computer vision through a detailed presentation including the basics of image processing and an application with the OpenCV library.",
         image: '/images/pictures/events/intro-cv-2020.jpg',
