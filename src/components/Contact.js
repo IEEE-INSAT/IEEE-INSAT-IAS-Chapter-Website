@@ -22,7 +22,7 @@ export default function Contact() {
                 <div className="cos-right">
                     <p>ieee.ias.insat@gmail.com</p>
                     <p>1080 Tunis Cedex, Tunis 1080</p>
-                    <p>+216 96 671 872</p>
+                    <p>+216 52301340</p>
                 
                     <div className="icons">
                         <a href="https://www.facebook.com/IASINSAT/">
