@@ -17,4 +17,4 @@ jobs:
         server: ftp.smart-sfax.org
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: public_html/ias-insat.ieee.tn
+        server-dir: /public_html/ias-insat.ieee.tn
