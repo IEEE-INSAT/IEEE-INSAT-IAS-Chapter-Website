@@ -1,3 +1,0 @@
-#!/bin/bash
-hello=`git rev-parse --abbrev-ref HEAD`
-echo `git add . && git commit -m '$1' && git push origin $hello`
