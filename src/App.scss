@@ -81,7 +81,11 @@ h3{
 
 h1,h2,h3{
   font-family: var(--nav-font);
+  line-height: 1.1em;
   padding-bottom: 10px;
+  &.title {
+    text-align:center;
+  }
 }
 
 .App{
