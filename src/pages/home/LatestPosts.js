@@ -4,6 +4,7 @@ import latestposts from '../../shared/db/latestposts'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import TextLineReveal from '../../components/TextLineReveal'
+import iOS from '../../shared/functions/ios'
 
 export default function LatestPosts() {
     return (
@@ -34,12 +35,12 @@ function ImageWithFullScreen ({src,alt}){
             className='non-fixed' 
             onClick={()=>{setShown(true)}}
         />
-        <div className={'fixed '+(shown?"shown":'')}>
+        {(iOS())?'':(<div className={'fixed '+(shown?"shown":'')}>
             <img src={src} alt={alt}  />
             <button onClick={()=>{setShown(false)}}>
                 <FontAwesomeIcon icon={faTimesCircle} />
             </button>
-        </div>
+        </div>)}
         </>
     )
 }
