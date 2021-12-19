@@ -15,7 +15,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 import EventShow from './components/EventShow';
 import { EsShowProvider } from './shared/contexts/EsShow';
-
 //lading context
 const loadingContext = createContext();
 
