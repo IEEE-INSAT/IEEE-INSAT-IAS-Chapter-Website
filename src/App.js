@@ -27,8 +27,6 @@ const routes = [
   {path: '/activities' , Component:Activities, name:"activities"}
 ]
 
-
-
 function App() {
 
   const location= useLocation();

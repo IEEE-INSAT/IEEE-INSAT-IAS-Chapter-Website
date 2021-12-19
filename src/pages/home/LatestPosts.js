@@ -35,7 +35,7 @@ function ImageWithFullScreen ({src,alt}){
             className='non-fixed' 
             onClick={()=>{setShown(true)}}
         />
-        {(iOS())?'':(<div className={'fixed '+(shown?"shown":'')}>
+        {false?'':(<div className={'fixed '+(shown?"shown":'')}>
             <img src={src} alt={alt}  />
             <button onClick={()=>{setShown(false)}}>
                 <FontAwesomeIcon icon={faTimesCircle} />
