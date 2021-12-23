@@ -11,7 +11,13 @@ import App from '../src/App'
 const app = express();
 const PORT =8000;
 
-app.use('^/$',(req, res, next)=>{
+
+
+app.use(express.static(
+    path.resolve(__dirname, '..','build')
+))
+
+app.get('*',(req, res, next)=>{
     console.log(req.url);
     fs.readFile(path.resolve('./build/index.html'), 'utf-8',(err,data)=>{
         if(err) {
@@ -33,10 +39,6 @@ app.use('^/$',(req, res, next)=>{
         return res.status(200).send(html);
     })
 })
-
-app.use(express.static(
-    path.resolve(__dirname, '..','build')
-))
 
 app.listen(PORT, ()=>{
     console.log(`App launched on ${PORT}`);

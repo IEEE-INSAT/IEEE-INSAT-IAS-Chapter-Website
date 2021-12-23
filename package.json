@@ -34,7 +34,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "ssr": "node server/index.js",
-    "ssr:buil":""
+    "build-react:ssr":"npm run build && npm run ssr"
   },
   "eslintConfig": {
     "extends": [
