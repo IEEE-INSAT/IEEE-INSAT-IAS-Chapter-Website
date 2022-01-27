@@ -6,6 +6,7 @@ import Information from './aboutus/Information'
 import Know from './aboutus/Know'
 import Contact from '../components/Contact'
 import TextLineReveal from '../components/TextLineReveal'
+import members from '../shared/db/Bureau'
 
 export default function AboutUs() {
     return (
@@ -16,7 +17,7 @@ export default function AboutUs() {
             </Header>
             <Information/>
             <Know/>
-            <Bureau/>
+            <Bureau members={members} name="TEAM"/>
             <Contact/>
         </div>
     )

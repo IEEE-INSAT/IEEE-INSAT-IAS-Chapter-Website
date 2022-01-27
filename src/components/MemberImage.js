@@ -23,10 +23,10 @@ export default function MemberImage({name, position, facebook, linkedin,image}) 
                         <h2> {name} </h2>
                         <p> {position} </p>
                         <div className="links">
-                            <a href={facebook}>
+                            <a href={facebook} target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon icon={faFacebook} />
                             </a>
-                            <a href={linkedin}>
+                            <a href={linkedin} target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin}/>
                             </a>
                         </div>

@@ -16,12 +16,13 @@
             margin: 30px;
             width: 400px; height: 400px;
             object-fit: contain;
-            transition: background-color 300ms ease;
+            transition: background-color 300ms ease,
+                transform 300ms ease;
             cursor: pointer;
             max-width: 90%;
-            
             &:hover{
-                background-color: var(--primary-green)
+                background-color: var(--primary-green);
+                transform: scale(1.05);
             }
         }
         .fixed {

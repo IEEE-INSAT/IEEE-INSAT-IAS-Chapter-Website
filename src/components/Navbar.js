@@ -38,6 +38,7 @@ export default function Navbar() {
                     <NavLink to="/about" exact activeClassName="current">About Us</NavLink>
                     <NavLink to="/awards" exact activeClassName="current">Awards</NavLink>
                     <NavLink to="/activities" exact activeClassName="current">Activities</NavLink>
+                    <NavLink to="/bootcamp" exact activeClassName="current">Bootcamp</NavLink>
                     <NavLink to="/contact" exact activeClassName="current">Contact Us</NavLink>
                 </ul>
                 <div className={"nav-button "+(clicked?"clicked":"")} onClick={()=>{setClicked(!clicked)}}>
