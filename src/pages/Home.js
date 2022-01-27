@@ -7,6 +7,7 @@ import Team from './home/Team'
 import Contact from '../components/Contact'
 import LatestPosts from './home/LatestPosts'
 
+
 export default function Home() {
     return (
         <div className="home">

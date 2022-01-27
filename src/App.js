@@ -15,6 +15,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 import EventShow from './components/EventShow';
 import { EsShowProvider } from './shared/contexts/EsShow';
+import Bootcamp from './pages/Bootcamp';
 
 //lading context
 const loadingContext = createContext();
@@ -25,7 +26,8 @@ const routes = [
   {path: '/about', Component:AboutUs, name:"about-us"},
   {path: '/contact' , Component:ContactUs, name:"contact-us"},
   {path: '/awards' , Component:Awards, name:"awards"},
-  {path: '/activities' , Component:Activities, name:"activities"}
+  {path: '/activities' , Component:Activities, name:"activities"},
+  {path: '/bootcamp' , Component:Bootcamp, name:"bootcamp"}
 ]
 
 

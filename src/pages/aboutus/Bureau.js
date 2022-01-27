@@ -1,11 +1,10 @@
 import React, { useRef } from 'react'
 import '../../styles/pages/aboutus/bureau.scss'
 import MemberImage from '../../components/MemberImage'
-import members from '../../shared/db/Bureau'
 import useRevealOne from '../../shared/hooks/useRevealOne'
 
 
-export default function Bureau() {
+export default function Bureau({members,name}) {
 
     const titleRef = useRef(null); 
 
@@ -13,7 +12,7 @@ export default function Bureau() {
 
     return (
         <div className="bureau">
-            <h1 className="title" ref={titleRef}>MEET THE TEAM</h1>
+            <h1 className="title" ref={titleRef}>MEET THE {name}</h1>
             <br />
             {
                 members.map((double,index)=>(
