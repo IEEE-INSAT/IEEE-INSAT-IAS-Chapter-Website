@@ -1,7 +1,7 @@
 const latestposts = [
-    "/images/latest-posts/mariem-beji.jpg",
-    "/images/latest-posts/happy-new-year.jpg",
-    "/images/latest-posts/award.jpg",
+    "/images/latest-posts/bootcamp.jpg",
+    "/images/latest-posts/labview.jpg",
+    "/images/latest-posts/reconversion.jpg",
 ]
 
 export default latestposts;
