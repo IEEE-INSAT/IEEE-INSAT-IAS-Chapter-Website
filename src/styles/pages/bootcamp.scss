@@ -17,6 +17,23 @@
             font-size: 1.5rem;
         }
     }
+
+    .gallery-container{
+        background-color:var(--dark-background)
+    }
+
+    .gallery-image {
+        width: 300px;
+        height: 200px; 
+        object-fit: cover; 
+        margin: 0 10px;
+    }
+
+    .presentation-title{
+        width: 90%;
+        margin :auto;
+    }
+
 }
 
 @media(max-width: 1000px) {

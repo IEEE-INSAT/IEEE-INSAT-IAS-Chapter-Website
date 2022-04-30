@@ -9,7 +9,7 @@ import { getFromPublic } from '../shared/functions/public'
 import useRevealOne from '../shared/hooks/useRevealOne'
 
 import activities from '../shared/db/activities'
-import HorGallery from './activities/HorGallery'
+import HorGallery from '../components/HorGallery'
 import gallery from '../shared/db/gallery'
 import thisyear from '../shared/db/thisyear'
 import { types } from '../shared/db/activities'
