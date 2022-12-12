@@ -1,84 +1,63 @@
 const members = [
     [
         {
-            name: "Omar Kouki",
+            name: "Bochra Boudriga",
             position:"Chair",
-            facebook: "https://www.facebook.com/omarkouki17",
-            linkedin: "https://www.linkedin.com/in/kouki-omar-490a321a7/",
-            image: '/images/pictures/members/chair.jpg'
-        },
-        {
-            name: "Khawla Soltani",
-            position:"Vice Chair",
-            facebook: "https://www.facebook.com/profile.php?id=100005590214693",
-            linkedin: "https://www.linkedin.com/in/khawla-soltani-219615191/",
-            image: '/images/pictures/members/viceChair.jpg'
+            facebook: "https://www.facebook.com/bochra.boudriga.5",
+            linkedin: "https://www.linkedin.com/in/bochra-boudriga-47b204210/",
+            image: '/images/pictures/members/chariwoman.jpg'
         },
     ],
     [
         {
-            name: "Mohamed Jedidi",
-            position:"Training Manager",
-            facebook: "https://www.facebook.com/med.jdidi.37",
-            linkedin: "https://www.linkedin.com/in/mohamed-jedidi-519aa221a/",
-            image: '/images/pictures/members/trainingManager.jpg'
+            name: "Khalil Ben Jebara",
+            position:"Vice chair membership activities",
+            facebook: "https://www.facebook.com/khalil.benjebara.90",
+            linkedin: "https://www.linkedin.com/in/khalil-benjebara-348240205/",
+            image: '/images/pictures/members/vc_membership_activities.jpg'
         },
         {
-            name: "Mariem Abdellatif",
-            position:"HR Manager",
-            facebook: "https://www.facebook.com/mariem.abdellatif.1999",
-            linkedin: "https://www.linkedin.com/in/mariem-abdellatif-86034b195/",
-            image: '/images/pictures/members/HRManager.jpg'
+            name: "Wassim Talmoudi",
+            position:"Vice chair technical activities",
+            facebook: "https://www.facebook.com/wassim.telmoudi.79",
+            linkedin: "https://www.linkedin.com/in/wassim-talmoudi-3a86a2208/",
+            image: '/images/pictures/members/vc_technical_activities.png'
         },
+
     ],
     [
         {
-            name: "Dali Sahnoun",
-            position:"Webmaster",
-            facebook: "https://www.facebook.com/medali.pic/",
-            linkedin: "https://www.linkedin.com/in/dalideco/",
-            image: '/images/pictures/members/webmaster.jpg'
+            name: "Nouha Jouini",
+            position:"General secretary",
+            facebook: "https://www.facebook.com/nouha.jouini.779",
+            linkedin: "https://www.linkedin.com/in/nouha-jouini-5799b1216/",
+            image: '/images/pictures/members/general_secretary.jpg'
         },
         {
-            name: "Elyes Chemakh",
-            position:"Logistics Manager",
-            facebook: "https://www.facebook.com/profile.php?id=100005969237813",
-            linkedin: "https://www.linkedin.com/in/elyes-chamekh-41bb181b3/",
-            image: '/images/pictures/members/logisticsManager.jpg'
-        },
-    ],
-    [
-        {
-            name: "Hamda Ben Khedher",
+            name: "Islem ben arfa",
             position:"Treasurer",
-            facebook: "https://www.facebook.com/hamdabk",
-            linkedin: "https://www.linkedin.com/in/hamda-ben-khedher-a755261bb/",
+            facebook: "https://www.facebook.com/islem.benarfa.509",
+            linkedin: "https://www.linkedin.com/in/islem-ben-arfa-6840121b4/",
             image: '/images/pictures/members/treasurer.jpg'
         },
-        {
-            name: "Chaima Ben Amor",
-            position:"General Secretary",
-            facebook: "https://www.facebook.com/chaima.benamor.7",
-            linkedin: "https://www.linkedin.com/in/ben-amor-chayma-a0657317a/",
-            image: '/images/pictures/members/generalSecretary.jpg'
-        },
     ],
     [
         {
-            name: "Wissem Mtiri",
+            name: "Asma Ben Smida",
             position:"Media Manager",
-            facebook: "https://www.facebook.com/wissem.mtiri.5",
-            linkedin: "https://www.linkedin.com/in/wissem-mtiri-b981891b3/",
-            image: '/images/pictures/members/mediaManager1.jpg'
+            facebook: "https://www.facebook.com/smidaAssouma",
+            linkedin: "https://www.linkedin.com/in/asma-smida-103026167/",
+            image: '/images/pictures/members/media_manager.jpg'
         },
         {
-            name: "Louay Khammassi",
-            position:"Media Manager",
-            facebook: "https://www.facebook.com/louay.khammassi.9",
-            linkedin: "https://www.linkedin.com/in/louay-khammassi-297a5a1ba/",
-            image: '/images/pictures/members/mediaManager.jpg'
+            name: "Ahmad Kortas",
+            position:"Logistics Manager",
+            facebook: "https://www.facebook.com/ahmad.kortas",
+            linkedin: "https://www.linkedin.com/in/ahmad-kortas-b7a605246/",
+            image: '/images/pictures/members/logistics_manager.jpg'
         },
-    ]
+    ],
+    
 ]
 
 export default members;
