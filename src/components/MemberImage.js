@@ -3,10 +3,10 @@ import { getFromPublic } from '../shared/functions/public'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCog } from '@fortawesome/free-solid-svg-icons'
 import '../styles/components/member-image.scss'
-import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import useRevealOneTime from '../shared/hooks/useRevealOneTime'
 
-export default function MemberImage({name, position, facebook, linkedin,image}) {
+export default function MemberImage({name, position, facebook, linkedin, instagram,image}) {
 
     const memberRef = useRef(null);
 
@@ -29,11 +29,15 @@ export default function MemberImage({name, position, facebook, linkedin,image}) 
                             <a href={linkedin} target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin}/>
                             </a>
+                            <a href={instagram} target="_blank" rel="noreferrer">
+                                <FontAwesomeIcon icon={faInstagram}/>
+                            </a>
+                            
                         </div>
                     </div>
                 </div>
                 
             </div>
         </div>
-    )
+    ) 
 }

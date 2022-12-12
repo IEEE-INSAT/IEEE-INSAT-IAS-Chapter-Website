@@ -12,33 +12,9 @@ const activities = [
         type:"events"
     },
     {
-        title:'Introduction to Computer Vision Workshop!',
-        description: "Hosted on the 8th of November 2020, Mr. Muhammad Touseep, a computer engineer at the University of Engineering and Technology Taxila, Pakistan Presented to our students this Workshop in an online presentation. He introduced attendees to the field of computer vision through a detailed presentation including the basics of image processing and an application with the OpenCV library.",
-        image: '/images/pictures/events/intro-cv-2020.jpg',
-        type:"training"
-    },
-    {
-        title:'Green belt',
-        description: 'The certified training sessions were presented by senior consultant in organization and performance-SMQ and certified L6S Black Belt trainer Noomen Gharsalli, who staggered between explaining the concepts of Green belt modules for the participants to understand and getting them involved in numerous activities that puts these concepts into practice. The experience was fulfilling and very educational for the participants as they learned how to handle all kinds of waste in the most efficient manner possible. These sessions were then concluded by a small ceremony where the trainer congratulated the participants and presented them with their certifications',
-        image: '/images/pictures/events/green-belt.jpg',
-        type:"training"
-    },
-    {
-        title:'LabVIEW',
-        description: "The training sessions was held by LabVIEW Student Ambassador Yassine Dridi, who profusely explained the numerous functions of the LabVIEW graphical user interface,more specifically measurement and data analysis, and presented the virtual workbench's functionality in simulations, idea presentation and general programming, the training was held over the span of 5 sessions, during which the LSA included multiple exercises and tutorials in order for the participants to get used to the interface through practice.",
-        image: '/images/pictures/events/labview-2019.jpg',
-        type:"training"
-    },
-    {
-        title:'ISO 9001 : 2015',
-        description: 'On August 30, 31 and September 01, IAS allowed 15 of our members to attend a training course on "Quality management systems" according to ISO 9001: 2015 & 19011: 2018 standards This course was delivered by our partner IMDTEC.',
-        image: '/images/pictures/events/iso-2015.jpg',
-        type:"training"
-    },
-    {
-        title:'Lean Manufacturing and Management',
-        description: "Lean Manufacturing and Management is a systematic method for waste minimization within a manufacturing system without sacrificing productivity. It is a great tool that helps the students learn how to manage a high-quality production process and help them face their professional career. These two-day courses that ends with a final exam pass certification were led by our great trainer, Mr Salem Ben Dhaou. The trainer has explained the concept and ensures the good understanding of participants. The training sessions’ goal is to bring students closer to the industrial and professional field. The session was delivered by Salem Ben Dhaou, Industrial Quality and Management Expert at Valeo, Tunisia and took place on e March 2 and 3, 2019.",
-        image: '/images/pictures/events/lm-mm.jpg',
+        title:'Labview workshop!',
+        description: "The training sessions was held by Anis Rajhi, who profusely explained the numerous functions of the LabVIEW graphical user interface,more specifically measurement and data analysis, and presented the virtual workbench's functionality in simulations, idea presentation and general programming, the training was held over the span of 5 sessions, during which the LSA included multiple exercises and tutorials in order for the participants to get used to the interface through practice.",
+        image: '/images/pictures/events/labview_workshop.JPG',
         type:"training"
     },
     {
