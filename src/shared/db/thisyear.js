@@ -46,8 +46,22 @@ const activities = [
     {
         title: 'General Assembly ', 
         status: 'Completed',
-        image: '/images/thisyear/general-assembly.jpg',
-        description : "The IEEE IAS INSAT organized in the debut of the university year a general assembly to present her activities and vision to the members for this mandate 🔥💚. In the first part, the executive board introduced to the attendees their events planned for this year such as the BootCamp, the study trip…. Secondly, they talked about their activities such as the training sessions and the industrial visits. And finally, the executive board presented their two waited projects: the smart garden and the new famous electric car project. The attendees were very excited about the adventure and they expressed their excitement by asking two many questions."
+        image: ['/images/thisyear/general-assembly.png'],
+        description : "The IEEE IAS INSAT organized in the debut of the university year a general assembly to present their activities and vision to the members for this mandate 🔥💚.",
+        additions: [
+            "It's been a pleasure to see your enthousiasm and passion towards IAS 😍💚 in our first ✨ General Assembly in this year",
+            "We are eager to meet you again in our upcoming events 🔥 , so keep your spirits hight and let the adventure begin 🔥💚.",
+        ]
+    },
+    {
+        title: 'Labview workshop ', 
+        status: 'Completed',
+        image: ['/images/thisyear/labview.png'],
+        description : '"we rise by lifting others 💚" is what we chose to be our motto, and lifting others starts by sharing knowledge and enlightenment.',
+        additions: [
+            "That's why we present to you our first workshop 🔥, the inception of an outstanding journey  of erudition 🔥💚, presented to our members by the one and only ✨ Anis Rajhi ✨ , where they dive into LabVIEW world 💚💚.",
+            "Hope you all enjoyed our first workshop of the year . THE BEST IS YET TO COME 💚 .",
+        ]
     },
     {
         title: 'Electrical Car', 
@@ -55,30 +69,7 @@ const activities = [
         image: '/images/thisyear/electric-car.jpg',
         description : "This year as the IAS INSAT Student chapter, we decide to implement our own project and do the conception of our electric car. In the first part, he focused on the importance of the electric car and it’s benefit in the real life. In fact, in these previous years, these cars becomes more and more used by people. he showed us the most bestselling of the electric car. In the second part, he focused on the structure of these cars and its functions. An electric car or battery-electric car is an automobile that is propelled by one or more electric motors, using energy stored in batteries. Compared to internal combustion engine (ICE) vehicles, electric cars are quieter, have no exhaust emissions, and lower emissions overall."
     },
-    {
-        title: 'PFE Journey', 
-        status: 'OnGoing',
-        image: '/images/thisyear/pfe-journey.jpg',
-        description : "In its second edition, PFE Journey made its comeback. Our guests were Ms.Sameh Zaguia ( EX Chairwomen of IEEE IAS INSAT) , Mr. Souheil chtioui (EX Chairman of IEEE RAS INSAT) and Mr. Ghaith Ben Abedsllem ( Founder of SPARK INSAT). Our three guests gives the participants a golden advice in searching and finding their internships. They let them know about the platforms used in the searching "
-    },
-    {
-        title: 'Quantum Computing training session', 
-        status: 'OnGoing',
-        image: '/images/thisyear/quantum-computing.jpg',
-        description : "Join us if you're interested to learn how QUANTUM COMPUTING algorithms apply to the real industrial world."
-    },
-    {
-        title: 'Bootcamp', 
-        status: 'Upcoming',
-        image: '/images/thisyear/bootcamp.jpg',
-        description : 'Last year, Bootcamp has been one hell of an experience !! 🔥 It allowed our candidates to unleash some great amounts of creativity and innovation😍 That is why we invite you to relive those breathtaking moments through this post💚 Stay tuned 🔥 Bootcamp is coming to conquer again 💪'
-    },
-    {
-        title: 'Smart Garden', 
-        status: 'Upcoming',
-        image: '/images/thisyear/smart-garden.jpg',
-        description : 'Last year, Bootcamp has been one hell of an experience !! 🔥 It allowed our candidates to unleash some great amounts of creativity and innovation😍 That is why we invite you to relive those breathtaking moments through this post💚 Stay tuned 🔥 Bootcamp is coming to conquer again 💪'
-    }
+
 ]
 
 export default activities ; 
