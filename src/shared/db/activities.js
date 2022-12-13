@@ -38,7 +38,7 @@ const activities = [
     },
     {
         title:'Industrial Visit to SAGEMCOM , Ben Arous',
-        description: "Sagemcom is a French leader in the European market for high value-added communicating terminals (decoders, multi-gigabit gateways, smart meters, etc.). In 2018, the group has a turnover of more than 2 billion euros, with 4,000 employees in more than 40 countries. More than 35 million terminals are designed, manufactured and delivered globally by Sagemcom in 2017. About the visit: IEEE-IAS INSAT chapter gives the opportunity to the participants of the industrial visit to explore its universe and have a deeper insight into three major markets: broadband, smart city and internet of things. This visit took place on the 6th of February 2019.",
+        description: "Sagemcom is a French leader in the european market for high value-added communicating terminals (decoders, multi-gigabit gateways, smart meters, etc.). In 2018, the group has a turnover of more than 2 billion euros, with 4,000 employees in more than 40 countries. More than 35 million terminals are designed, manufactured and delivered globally by Sagemcom in 2017. About the visit: IEEE-IAS INSAT chapter gives the opportunity to the participants of the industrial visit to explore its universe and have a deeper insight into three major markets: broadband, smart city and internet of things. This visit took place on the 6th of February 2019.",
         image: '/images/pictures/events/iv-sagemcom.jpg',
         type:"industrial visits"
     },
