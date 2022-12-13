@@ -75,7 +75,7 @@ export default function Events() {
                         ))
                     }
                 </HorGallery>
- 
+
                 <br />
                 <br />
 
