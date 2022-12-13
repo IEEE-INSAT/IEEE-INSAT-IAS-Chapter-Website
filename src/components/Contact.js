@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { getFromPublic } from '../shared/functions/public'
 import '../styles/components/Contact.scss'
-import { faFacebook,faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook,faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 export default function Contact() {
     return (
@@ -31,6 +31,10 @@ export default function Contact() {
                         <a href="https://www.linkedin.com/company/ieee-insat-ias-sbc/mycompany/">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
+                        <a href="https://www.instagram.com/ieeeiasinsat/">
+                            <FontAwesomeIcon icon={faInstagram} />
+                        </a>
+                        
                     </div>
                 </div>
             </div>
