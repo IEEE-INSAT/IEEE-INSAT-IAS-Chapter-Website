@@ -14,7 +14,7 @@ const activities = [
     },
     {
         title:'Labview workshop!',
-        description: '"we rise by lifting others 💚" is what we chose to be our motto, and lifting others starts by sharing knowledge and enlightenment. That is why we present to you our first workshop 🔥, the inception of an outstanding journey of erudition 🔥💚, presented to our members by the one and only ✨ Anis Rajhi ✨ , where they dive into LabVIEW world 💚💚. Hope you all enjoyed our first workshop of the year . THE BEST IS YET TO COME 💚 .',
+        description: ' "we rise by lifting others 💚" is what we chose to be our motto, and lifting others starts by sharing knowledge and enlightenment. That is why we present to you our first workshop 🔥, the inception of an outstanding journey of erudition 🔥💚, presented to our members by the one and only ✨ Anis Rajhi ✨ , where they dive into LabVIEW world 💚💚. Hope you all enjoyed our first workshop of the year . THE BEST IS YET TO COME 💚 .',
         image: '/images/pictures/events/labview_workshop.JPG',
         type:"training"
     },
