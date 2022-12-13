@@ -12,8 +12,8 @@ export default function SpinImage({image, width=null, height=null}) {
     useRevealOne(imageRef);
 
     const widthAndHeight= {
-        width: width? width: '250px',
-        theight: height? height: '250px'
+        width: width? width: '300px',
+        theight: height? height: '300px'
     }
 
     return (

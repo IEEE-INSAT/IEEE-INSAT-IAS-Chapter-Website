@@ -8,4 +8,3 @@ export default function HorGallery({children}) {
         </div>
     )
 }
- 
