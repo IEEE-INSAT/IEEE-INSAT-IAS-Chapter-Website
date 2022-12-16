@@ -9,7 +9,7 @@ import HorGallery from '../components/HorGallery'
 import ImageLoad from '../components/ImageLoad';
 import { getFromPublic } from '../shared/functions/public';
 import bootcamp_gallery from '../shared/db/bootcamp_gallery';
-
+ 
 export default function Bootcamp() {
     return (
         <div id="bootcamp">
