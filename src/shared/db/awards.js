@@ -1,7 +1,7 @@
 const awards = [
-    {title:"IAS CMD outstanding Chapter Award"},
-    {title:"IAS CMD most happening chapter contest 2021 award"},
-    {title:"IAS CMD Chapter web contest 2021 award"},
+    {title:"IAS CMD Outstanding Chapter Award"},
+    {title:"IAS CMD Most Cappening Chapter Contest 2021 Award"},
+    {title:"IAS CMD Chapter Web Contest 2021 Award"},
     {title:"IEEE IAS GMP Contest 2021 ( first place with the career hunt event)"},
     {title:"The region 8 Student Branch Chapter of the Year Award 2020 - Small Category.", },
     {title:"Industry Engagement Committee Social Media Competition 2020 ", },
@@ -13,6 +13,8 @@ const awards = [
     {title:"IAS Annual Meeting 2018, Oregon: Outstanding Student Branch Chapter Chair (Eya Bourguiba) "},
     {title:"Tunisian Students and Young Professionals (TSYP) 2017 Sousse, Tunisia: Certificate of Appreciation. - IAS Annual Meeting 2017, Ohio, USA: First prize of Web Design Contest. "},
     {title:"AS Annual Meeting 2015, Texas, USA: Second prize of the IAS Myron Zucker Undergraduate Student Design Contest with a project entitled \"Design and implement a simulation tool for the Reconfigurable Smart Grid\"."},
+    {title:"IAS Most Impactful Webinar Contest 2021 Award"},
+    {title:"IAS Chapter Web Contest Winner 2022 Award"},
 ]
 
 export default awards;

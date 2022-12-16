@@ -19,6 +19,7 @@ export default function ImageLoad({className,width, height,spinColor, alt,...pro
                 alignItems:'center',
                 flexBasis:width,
                 flexShrink:0,
+                borderRadius: '25px',
             }}
         >    
             <img
@@ -29,7 +30,8 @@ export default function ImageLoad({className,width, height,spinColor, alt,...pro
                     width:'100%',
                     height:'100%',
                     top: 0, left: 0,
-                    transition: 'opacity 300ms ease'
+                    transition: 'opacity 300ms ease',
+                    
                 }}
                 {...props}
                 alt={alt?alt:"no description"}

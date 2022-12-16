@@ -1,15 +1,10 @@
 
 const activities = [
     {
-        title:'IEEE Region 8 Industrial Bootcamp - 2020',
-        description: "The Region 8 Industrial Bootcamp was a three -day Bootcamp with which the IEEE IAS INSAT SBC won the Region 8 Acceleration Contest 2019. The general theme of the Bootcamp was Safety 4.0: Updating safety for industry 4.0 including arc flash hazards/electrical safety, chemical/biological accidents, andcybersecurity. Working in teams, the participantsbuilt their projects from the scratch with the assistance of professional and highly-qualified trainers. The attendees were provided with a series of workshops covering both soft and technical skills and a well-equipped coworking space. A final pitching session was held on the third day to evaluate the projects and to select a winning team.The winners received a 500 TND financial aid to help them implement their project.",
-        image: '/images/pictures/events/bootcamp-2020.jpg',
-        type:"events"
-    },
-    {
-        title:'IAS Tunisia Annual Meeting - Job Fair _ 2020',
-        description: "The IAS Job Fair is the first part of the IEEE IAS Tunisia Section Annual Meeting’s program. The event was dedicated to linking students, searching for internships, from all the IAS Tunisia Section’s Student Branch Chapters with the best Tunisian enterprises and leaders in the field of industry and new technologies. The chapter had the honor to have 7 enterprises from various fields as its guests during the IAS Tunisia Annual Meeting’s Job Fair: COFI CAB, Cure Bionics, Henkel, Corail Technologie, Sartorius, and P oulina Group H o l d i ng. Each company had an individual session in the online meet where its representatives introduced attendees to the enterprise’s activity domains and internship program for the year 2021. ",
-        image: '/images/pictures/events/annual-meeting-2020.jpg',
+        title:'IAS Tunisia Annual Meeting - 2022',
+        description: `We had the honor to participate in IAS ANNUAL MEETING organized this year by IAS ENIT SBC and held in hotel yasmine hammamet . It was a 2 day summit which theme was “ automotive engineering “ 
+        we had the chance to participate in the non technical challenge .Unfortunately , we didn’t make it to the finals but we were proud by our efforts and grateful for having such an incredible experience with such a great network `,
+        image: '/images/pictures/events/iasTunisianAnnualMeeting2022.png',
         type:"events"
     },
     {
@@ -19,9 +14,21 @@ const activities = [
         type:"training"
     },
     {
-        title:'Study Trip 2019',
-        description: "For the purpose of fulfilling one of IEEE IAS's most essential goals, which is linking research to practice, IEEE IAS INSAT SBC has organized a study trip, where students embarked on a journey to some of Tunisia's most prominent industrial sites to get a full understanding of the multiple industrial procedures and applications, as well as get to know the full extent of the applicability of their theoretical knowledge this journey lasted over the span of three days, where partcipants toured industrial zones spread across Zaghouane Governorate, such as Helioflex, Teriak and BJO.",
-        image: '/images/pictures/events/study-trip-2019.jpg',
+        title:'Summer school 5.0',
+        description: ' "we rise by lifting others 💚" is what we chose to be our motto, and lifting others starts by sharing knowledge and enlightenment. That is why we present to you our first workshop 🔥, the inception of an outstanding journey of erudition 🔥💚, presented to our members by the one and only ✨ Anis Rajhi ✨ , where they dive into LabVIEW world 💚💚. Hope you all enjoyed our first workshop of the year . THE BEST IS YET TO COME 💚 .',
+        image: '/images/pictures/events/summerSchool2022.png',
+        type:"events"
+    },
+    {
+        title:'IAS International Annual Meeting 2022',
+        description: `Some of IEEE IAS INSAT SBC volunteers had the opportunity to represent our student branch chapter in the IAS  international  Annual meeting, happening in Detroit, Michigan, USA which was held in October ,2022 . We’re also honored to tell you that we received 2 awards in this occasion which are “ the IAS Most impactful Webinar Contest 2021“ and “IAS Chapter Web Contest Winner 2022 “ `,
+        image: '/images/pictures/events/internationalAnnualMeeting2022.png',
+        type:"events"
+    },
+    {
+        title:'IEEE Day 2022',
+        description: `As usual in every IEEE DAY we have a stand in the hall were we can represent our chapter and let members know more about us. Our stand were very decorated and well presented. As program we make a games series and for the ones who win in all of them they can win a restaurant ticket valued 10 dinars from “LELLA”.  `,
+        image: '/images/pictures/events/ieeeDay2022.jpg',
         type:"events"
     },
     {

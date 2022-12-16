@@ -1,39 +1,28 @@
+
+
 const activities = [
     {
         title: 'IAS Annual meeting', 
         status: 'Completed',
-        image: '/images/thisyear/annual-meeting.jpg',
-        description : "The IAS Tunisia Annual Meeting was a two-day summit that focused on industry and gathered industrial engineering students and graduates. The event’s theme was Industry 4.0: Technological Innovations For Industrial Transition. The congress was an opportunity for all the members of the IAS Student Branch Chapters to establish national and international relations with engineers and experts in futuristic technologies. The event consisted of a technical challenge, a non-technical challenge, two workshops, panel sessions, and mentorships for future engineers.",
+        image: '/images/thisyear/iasAnnualMeeting2022.png',
+        description : `We had the honor to participate in IAS ANNUAL MEETING organized this year by IAS ENIT SBC and held in hotel yasmine hammamet . It was a 2 day summit which theme was “ automotive engineering “ `,
         additions : [
-            "Day 1: February 6th, 2020:",
-            "- Opening Ceremony",
-            "- Debate: Industry 4.0",
-            "- Neuro-Linguistic Programming Workshop",
-            "- Business Model Canvas Workshop",
-            "- Non-Technical Challenge Pitching",
-            "Day 2:",
-            "- Technical Challenge (SmartIndus Competition) Pitching Session",
-            "- Artistic Break - Theatro INSAT",
-            "- Success Stories",
-            "- Closing Ceremony"
+            `We had the chance to participate in the non technical challenge.`,
+            `Unfortunately , we didn’t make it to the finals but we were proud by our efforts and grateful for having such an incredible experience with such a great network. `,
         ]
     },
     {
-        title: 'Summer School', 
+        title: 'Summer School 5.0', 
         status: 'Completed',
-        image: '/images/thisyear/summer-school.jpg',
-        description : "We're back with our summer school workshop series 🔥 Don't miss this great opportunity with our talented coaches : Wadii Hamdi , Haithem Daboussi founder of Maker Academy and Omar Hajjouji .🔥 We will dive more into fileds like the introduction to BIM , Prototyping & 3D printing , the introduction to AI in industry 4.0 🔥🔥",
-        additions : [
-            "- Prototyping and 3D printing: Trained by Mr. Daboussi Haithem, a mechatronic engineer and the founder of Maker Academy, the 25 participants had the chance to see all about 3D printing and computer-aided design (CAD) and witness the printing process of a piece right then and there.",
-            "- Introduction to Building Information Modeling (BIM): This incredible workshop was presented at INSAT conference room by our trainer Mr. Wadii Hamdi, an industrial engineer and technical director at AUTODESK. The session was 3 hours long. The trainer gave the 45 participants golden pieces of advice on how to succeed in their professional interviews and write a presentable CV. He introduced two of the most used software in the BIM: AutoCAD is a commercial computer-aided design (CAD) and drafting software application, developed and marketed by Autodesk and Revit, a building information modeling software for architects, designers, contractors, and engineers from multiple fields: plumbing, structuring, mechanics, electricity... ",
-            "- Introduction to AI in industry 4.0: This workshop was very interesting. It got trained by Mr. Omar Hajjouji, 4th-year instrumentation and industrial maintenance student at INSAT and the head of the learning department in Data Co-lab. The trainer introduced artificial intelligence and explained the importance of predictive maintenance. He focused on machine learning and the importance of the use of algorithms in ML. The participants had the chance to see how the collection of Data is happening. They witnessed how the algorithms can predict some situations in the future."
-        ]
+        image: '/images/thisyear/summerSchool.jpg',
+        description : `The fifth edition of ✨Summer School✨ was successfully held  😍. our two workshops : "AI in Industry" and "Introduction to electric car" had been a great success 🔥🔥thanks to the huge efforts of our officers💚, of our brilliant trainers💚 and thanks to the presence and motivation of our dear participants💚💚
+        we hope that you enjoyed this experience as much as we enjoyed having you with us✨💚`,
     },
     {
         title: 'IEEE Day', 
         status: 'Completed',
-        image: '/images/thisyear/IEEEday.jpg',
-        description : "As usual in every IEEE DAY we have a stand in the hall were we can represent our chapter and let members know more about us. Our stand were very decorated and well presented. As program we make a games series and for the ones who win in all of them they can win a restaurant ticket valued 10 dinars from “FRATELLI”. The games series was contracted from 3 games : ",
+        image: '/images/thisyear/ieeeday.png',
+        description : "As usual in every IEEE DAY we have a stand in the hall were we can represent our chapter and let members know more about us. Our stand were very decorated and well presented. As program we make a games series and for the ones who win in all of them they can win a restaurant ticket valued 10 dinars from “LELLA”. The games series was contracted from 3 games : ",
         additions: [
             "- A loop game : the participants were supposed to pass the loop through the IAS shape without making contact . each participant had only 4 chances other wise he loose and doesn’t pass to the next game .",
             "- An electric circuit game : the participant is supposed to correct the wrong placed electric composant to let the word IAS light with green light. These game is limited with a time and limited number of moves . if he loose he can’t pass to the last game.",
@@ -51,6 +40,15 @@ const activities = [
         additions: [
             "It's been a pleasure to see your enthousiasm and passion towards IAS 😍💚 in our first ✨ General Assembly in this year",
             "We are eager to meet you again in our upcoming events 🔥 , so keep your spirits hight and let the adventure begin 🔥💚.",
+        ]
+    },
+    {
+        title: 'IAS International Annual Meeting 2022', 
+        status: 'Completed',
+        image: ['/images/thisyear/iasAnnualMeeting2022.jpg'],
+        description : "Some of IEEE IAS INSAT SBC volunteers had the opportunity to represent our student branch chapter in the IAS  international  Annual meeting, happening in Detroit, Michigan, USA which was held in October ,2022 . ",
+        additions: [
+            `We’re also honored to tell you that we received 2 awards in this occasion which are “ the IAS Most impactful Webinar Contest 2021“ and “IAS Chapter Web Contest Winner 2022 “ `,
         ]
     },
     {
