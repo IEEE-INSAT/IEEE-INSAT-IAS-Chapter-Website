@@ -1,12 +1,6 @@
 
 const activities = [
     {
-        title:'IEEE Region 8 Industrial Bootcamp - 2020',
-        description: "The Region 8 Industrial Bootcamp was a three -day Bootcamp with which the IEEE IAS INSAT SBC won the Region 8 Acceleration Contest 2019. The general theme of the Bootcamp was Safety 4.0: Updating safety for industry 4.0 including arc flash hazards/electrical safety, chemical/biological accidents, andcybersecurity. Working in teams, the participantsbuilt their projects from the scratch with the assistance of professional and highly-qualified trainers. The attendees were provided with a series of workshops covering both soft and technical skills and a well-equipped coworking space. A final pitching session was held on the third day to evaluate the projects and to select a winning team.The winners received a 500 TND financial aid to help them implement their project.",
-        image: '/images/pictures/events/bootcamp-2020.jpg',
-        type:"events"
-    },
-    {
         title:'IAS Tunisia Annual Meeting - 2022',
         description: `We had the honor to participate in IAS ANNUAL MEETING organized this year by IAS ENIT SBC and held in hotel yasmine hammamet . It was a 2 day summit which theme was “ automotive engineering “ 
         we had the chance to participate in the non technical challenge .Unfortunately , we didn’t make it to the finals but we were proud by our efforts and grateful for having such an incredible experience with such a great network `,

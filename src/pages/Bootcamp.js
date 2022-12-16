@@ -2,13 +2,13 @@ import React from 'react';
 import Header from '../components/Header';
 import TextLineReveal from '../components/TextLineReveal';
 import '../styles/pages/bootcamp.scss'
-import Tesla from '../shared/components/Tesla';
 import Bureau from './aboutus/Bureau';
 import members from '../shared/db/bootcamp';
 import HorGallery from '../components/HorGallery'
 import ImageLoad from '../components/ImageLoad';
 import { getFromPublic } from '../shared/functions/public';
 import bootcamp_gallery from '../shared/db/bootcamp_gallery';
+import Alexander from '../shared/components/AlexanderDeCroo';
  
 export default function Bootcamp() {
     return (
@@ -28,14 +28,12 @@ export default function Bootcamp() {
                 <div>
                     <h1 style={{ marginBottom: '20px' }}>The Bootcamp</h1>
                     <p>
-                        IAS Bootcamp is an opportunity for students from different fields to test their teamwork, skills and creavity.
-                        It consists of training sessions delivered by qualified professionals and of the project develepment phase. The jury will choose the winners.
-                    </p>
+                    IAS R8 INDUSTRIAL Bootcamp is an opportunity for students from different fields to test their teamwork, skills and creavity.It basically consists in a hackathon aiming to solve an industrial problem preceded by 3 days of training sessions delivered by qualified professionals .                    </p>
                 </div>
             </div>
 
             <div style={{ backgroundColor: "var(--dark-background)" }}>
-                <Tesla />
+                <Alexander/>
             </div>
 
             <div className="gallery-container">
@@ -54,7 +52,6 @@ export default function Bootcamp() {
                 <br />
 
             </div>
-            <Bureau members={members} name="COMMITTEE" />
         </div>
     )
 }
