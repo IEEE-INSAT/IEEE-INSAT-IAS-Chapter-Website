@@ -7,6 +7,7 @@ import AboutUs from './pages/AboutUs';
 import Navbar from './components/Navbar';
 import ContactUs from './pages/ContactUs';
 
+
 import { Route, useLocation,Routes } from "react-router-dom";
 import Awards from './pages/Awards';
 import Activities from './pages/Activities';

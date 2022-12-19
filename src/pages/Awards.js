@@ -15,7 +15,7 @@ export default function Awards() {
                 </TextLineReveal>
                 <TextLineReveal delay={200}>
                     <p>
-                        We continue working to win more.  
+                        We continue working to win more... 
                     </p>
                 </TextLineReveal>
             </Header>
