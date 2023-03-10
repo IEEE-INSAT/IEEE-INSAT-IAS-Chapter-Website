@@ -1,6 +1,6 @@
 const bootcamp_gallery = []
 
-for(let i=1; i<12; i++){
+for(let i=1; i<11; i++){
     if(i==6)
         continue;
     bootcamp_gallery.push(
@@ -9,3 +9,5 @@ for(let i=1; i<12; i++){
 }
 
 export default bootcamp_gallery
+
+//testing
