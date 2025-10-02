@@ -33,7 +33,7 @@ export default function Contact() {
           </p>
         </div>
         <div className="cos-right">
-          <p>ieee.ias.insat@gmail.com</p>
+          <p>ieeeinsatsb.ias@gmail.com</p>
           <p>1080 Tunis Cedex, Tunis 1080</p>
           <p>+216 23541694</p>
 
