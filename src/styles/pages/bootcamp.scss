@@ -67,4 +67,65 @@
   margin-top: 20px;
   color: #4caf50;
 }
+.winners-container {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.winners-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.winner-card {
+  position: relative;
+  width: 220px;
+  height: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  background: #000;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .place {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+/* Optional highlights */
+.winner-card.first {
+  transform: scale(1.1);
+}
+
+.winner-card.first .place {
+  background: gold;
+  color: black;
+}
+
+.winner-card.second .place {
+  background: silver;
+  color: black;
+}
+
+.winner-card.third .place {
+  background: #cd7f32;
+  color: black;
+}
+
 

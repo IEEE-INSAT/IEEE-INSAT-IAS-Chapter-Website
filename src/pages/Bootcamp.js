@@ -56,6 +56,26 @@ export default function Bootcamp() {
                 <br />
 
             </div>
+	    <div className="winners-container">
+                <h1 className="presentation-title">Last Year Winners</h1>
+
+                <div className="winners-grid">
+                    <div className="winner-card first">
+                        <span className="place">1st</span>
+                        <img src="/images/winners/first.jpg" alt="First place winner" />
+                    </div>
+
+                    <div className="winner-card second">
+                        <span className="place">2nd</span>
+                        <img src="/images/winners/second.jpg" alt="Second place winner" />
+                    </div>
+
+                    <div className="winner-card third">
+                        <span className="place">3rd</span>
+                        <img src="/images/winners/third.jpg" alt="Third place winner" />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
