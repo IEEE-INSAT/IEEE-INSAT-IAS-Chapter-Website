@@ -6,22 +6,22 @@ import Number from "./Number";
 const NumbersContent = [
   {
     title: "Conferences participation",
-    number: 14,
+    number: 15,
     image: getFromPublic("/images/head-icons/nbr-conf.png"),
   },
   {
     title: "Members",
-    number: 180,
+    number: 53,
     image: getFromPublic("/images/head-icons/nbr-members.png"),
   },
   {
     title: "Industrial visits",
-    number: 24,
+    number: 27,
     image: getFromPublic("/images/head-icons/nbr-visits.png"),
   },
   {
     title: "Years old",
-    number: 10,
+    number: 11,
     image: getFromPublic("/images/head-icons/nbr-age.png"),
   },
 ];
