@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "../styles/pages/activities.scss";
 
 import Header from "../components/Header";
@@ -6,7 +6,6 @@ import TextLineReveal from "../components/TextLineReveal";
 // import SpinImage from '../components/SpinImage'
 
 import { getFromPublic } from "../shared/functions/public";
-import useRevealOne from "../shared/hooks/useRevealOne";
 
 import HorGallery from "../components/HorGallery";
 import gallery from "../shared/db/gallery";
