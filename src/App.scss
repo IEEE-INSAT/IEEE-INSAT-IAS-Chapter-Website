@@ -1,112 +1,116 @@
 //importing needs
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-@use 'variables';
-@use 'keyframes';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@use "variables";
+@use "keyframes";
+@use "styles/pages/home";
+@use "styles/components/fixed-backg";
+
 @font-face {
-  font-family: 'sansation';
+  font-family: "sansation";
   src: url(styles/fonts/Sansation_Regular.ttf);
 }
 
 //setting global font-size and selection color
-html{
+html {
   font-size: 16px;
 }
-::selection{
+::selection {
   color: rgb(84, 160, 84);
 }
 
 //setting global variables
 :root {
   //font sizes
-  --big-font: 2.5rem ;
+  --big-font: 2.5rem;
   --bigger-font: 3rem;
-  --less-big-font: 1.8rem; 
+  --less-big-font: 1.8rem;
   --little-big-font: 1.1rem;
-  --big-paragraph: 1.5rem; 
+  --big-paragraph: 1.5rem;
   --bigger-paragraph: 1.85rem;
 
-  //colors 
-  --dark-background:#051400c2 ;
+  //colors
+  --dark-background: #051400c2;
   --less-dark-background: #05140091;
-  --primary-green:#2e964d ;
+  --primary-green: #2e964d;
   //#2e964d
-  --primary-transparent-green:#2e964dd0; 
+  --primary-transparent-green: #2e964dd0;
   // #0a7700b6;
-  --secondary-green:#0ea700;
+  --secondary-green: #0ea700;
   --primary-white: white;
   --dark-green: #345308;
   --white-layer: rgba(255, 255, 255, 0.89);
 
   //fonts
-  --nav-font: 'Montserrat', sans-serif;
+  --nav-font: "Montserrat", sans-serif;
 }
 
 //start template
-*{
-  margin: 0; 
-  padding: 0; 
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  position: relative; 
-  z-index : 1; 
-  line-height: 1.8em ;
-  font-family: 'Roboto';
+body {
+  position: relative;
+  z-index: 1;
+  line-height: 1.8em;
+  font-family: "Roboto";
   overflow-x: hidden;
   background-color: var(--primary-green);
 }
 
-
 //custom fonts and container
 .container {
-  width: 80%; 
-  max-width: 1200px; 
-  margin: auto ;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
 }
 
-h1{
+h1 {
   font-size: var(--big-font);
-  font-weight:700;
+  font-weight: 700;
 }
 
-h2{
+h2 {
   font-size: var(--less-big-font);
   font-weight: 600;
 }
-h3{
-  font-size:var(--little-big-font);
+h3 {
+  font-size: var(--little-big-font);
   font-weight: 600;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
   font-family: var(--nav-font);
   line-height: 1.1em;
   padding-bottom: 10px;
   &.title {
-    text-align:center;
+    text-align: center;
   }
 }
 
-.App{
-  &>div{
-    opacity:0;
+.App {
+  & > div {
+    opacity: 0;
     animation: back-to-normal 500ms ease forwards;
   }
-  &>.fixed-backg{
+  & > .fixed-backg {
     opacity: 1;
     animation: none;
   }
 }
 
 //reducing global font-size on mobile
-@media (max-width: 750px){
-  html{
-    font-size: 15px
+@media (max-width: 750px) {
+  html {
+    font-size: 15px;
   }
 }
 
-//scroll bar 
+//scroll bar
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -127,60 +131,65 @@ h1,h2,h3{
   background: var(--secondary-green);
 }
 
-.App{
+.App {
   transition: transform 1000ms ease 200ms;
   transform-origin: top;
   overflow-x: hidden;
 }
-.App.invisible{
+.App.invisible {
   transform: scale(0.5) translateY(150vh);
 }
 
-.loading{
+.loading {
   color: white;
   position: fixed;
-  top:0; left:0;
-  width: 100%;height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
   z-index: 200;
   // rgb(0, 22, 7)
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
   pointer-events: none;
-  
-  transition:transform 1000ms ease;
-  &.loaded{
+
+  transition: transform 1000ms ease;
+  &.loaded {
     transform: translateY(-100%);
   }
-  svg{
+  svg {
     font-size: 2rem;
     animation: rotate-360 2000ms ease infinite;
   }
-  
 }
 
-.loading-video{
-  position: fixed; 
-  width: 100%; height: 100vh;
-  top:0; left: 0;
-  display:flex; justify-content: center; align-items: center;
+.loading-video {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-green);
   transition: transform 2000ms ease;
-  video{
+  video {
     width: 100%;
     max-height: 100vh;
   }
-  &.ended{
+  &.ended {
     transform: translateY(-100%);
   }
   .enter-button {
     position: absolute;
     bottom: 10%;
     left: 50%;
-    transform : translateX(-50%);
+    transform: translateX(-50%);
     background: none;
     color: var(--primary-green);
-    border:none;
+    border: none;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -188,45 +197,46 @@ h1,h2,h3{
     font-size: var(--little-big-font);
     cursor: pointer;
     z-index: 1;
-    &::after{
-      content: '';
-      position: absolute; 
-      top: 0; left: 0; 
-      width: 100%;height: 100%;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background-color: white;
       z-index: -1;
       border-radius: 50%;
       transition: transform 300ms ease;
     }
-    &:hover::after{
+    &:hover::after {
       transform: scale(1.2);
     }
   }
-  
 }
 
-.title{
+.title {
   position: relative;
-  &::after{
-      content:'';
-      position: absolute;
-      top:100%;
-      left:0;
-      width: 0;
-      height: 3px;
-      background-color: white;
-      transition: width 700ms ease;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 700ms ease;
   }
   &.visible::after {
-      width: 100%;
+    width: 100%;
   }
 }
 
-.undisplayed{
-  display:none;
+.undisplayed {
+  display: none;
 }
 
-.dark-back{
+.dark-back {
   background-color: var(--dark-background);
 }
 
@@ -241,6 +251,3 @@ h1,h2,h3{
 .Upcoming {
   color: rgb(52, 52, 167);
 }
-
-@use 'styles/pages/home';
-@use 'styles/components/fixed-backg'
