@@ -41,7 +41,7 @@ export default function Bootcamp() {
             </div>
 
             <div className="gallery-container">
-                <h1 className="presentation-title">This year's bootcamp gallery: </h1>
+                <h1 className="presentation-title">Last year's bootcamp gallery: </h1>
                 <HorGallery>
                     {
                         bootcamp_gallery.map((img, index) => (
