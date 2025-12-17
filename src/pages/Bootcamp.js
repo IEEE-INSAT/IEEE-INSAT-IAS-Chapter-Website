@@ -9,6 +9,7 @@ import ImageLoad from '../components/ImageLoad';
 import { getFromPublic } from '../shared/functions/public';
 import bootcamp_gallery from '../shared/db/bootcamp_gallery';
 import Alexander from '../shared/components/AlexanderDeCroo';
+import Countdown from '../components/Countdown';
  
 export default function Bootcamp() {
     return (
@@ -21,6 +22,9 @@ export default function Bootcamp() {
                     <p>
                         We continue working to win more.
                     </p>
+                </TextLineReveal>
+	       <TextLineReveal delay={400}>
+                    <Countdown />
                 </TextLineReveal>
             </Header>
             <div className="description">
