@@ -2,8 +2,6 @@ import React from 'react';
 import Header from '../components/Header';
 import TextLineReveal from '../components/TextLineReveal';
 import '../styles/pages/bootcamp.scss'
-import Bureau from './aboutus/Bureau';
-import members from '../shared/db/bootcamp';
 import HorGallery from '../components/HorGallery'
 import ImageLoad from '../components/ImageLoad';
 import { getFromPublic } from '../shared/functions/public';

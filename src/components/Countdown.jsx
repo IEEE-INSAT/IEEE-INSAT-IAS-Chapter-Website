@@ -27,7 +27,7 @@ export default function Countdown() {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [calculateTimeLeft]);
 
   if (!timeLeft) {
     return <h2 className="countdown-ended">The bootcamp has started 🎉</h2>;

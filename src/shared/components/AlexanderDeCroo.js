@@ -1,15 +1,6 @@
 import React,{useEffect, useRef} from 'react'
 import '../../styles/components/Tesla.scss'
 import { getFromPublic } from '../functions/public'
-import { getRandom } from '../functions/math'
-
-const teslaQuotes = [
-    "“If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.”",
-    "“I don't care that they stole my idea . . I care that they don't have any of their own”",
-    "“The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence.”",
-    "“The scientists of today think deeply instead of clearly. One must be sane to think clearly, but one can think deeply and be quite insane.”",
-    "“Be alone, that is the secret of invention; be alone, that is when ideas are born.”",
-]
 
 
 export default function Alexander() {
