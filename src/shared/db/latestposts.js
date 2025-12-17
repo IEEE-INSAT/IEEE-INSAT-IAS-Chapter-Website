@@ -1,8 +1,7 @@
-
 const latestposts = [
-    "/images/latest-posts/bootcamp.jpg",
-    "/images/latest-posts/labview.jpg",
-    "/images/latest-posts/reconversion.jpg",
-]
+  "/images/activities/catia-workshop.jpg",
+  "/images/activities/visteon.jpg",
+  "/images/activities/safran-visit.jpg",
+];
 
 export default latestposts;
