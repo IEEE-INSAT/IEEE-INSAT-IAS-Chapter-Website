@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 export default function Countdown() {
-  const targetDate = new Date("2026-02-14T00:00:00");
-
-  const calculateTimeLeft = () => {
+  const calculateTimeLeft = useCallback(() => {
+    const targetDate = new Date("2026-02-14T00:00:00");
     const now = new Date();
     const difference = targetDate - now;
 
@@ -17,7 +16,7 @@ export default function Countdown() {
       minutes: Math.floor((difference / (1000 * 60)) % 60),
       seconds: Math.floor((difference / 1000) % 60),
     };
-  };
+  }, []);
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -35,11 +34,18 @@ export default function Countdown() {
 
   return (
     <div className="countdown">
-      <div><span>{timeLeft.days}</span> Days</div>
-      <div><span>{timeLeft.hours}</span> Hours</div>
-      <div><span>{timeLeft.minutes}</span> Minutes</div>
-      <div><span>{timeLeft.seconds}</span> Seconds</div>
+      <div>
+        <span>{timeLeft.days}</span> Days
+      </div>
+      <div>
+        <span>{timeLeft.hours}</span> Hours
+      </div>
+      <div>
+        <span>{timeLeft.minutes}</span> Minutes
+      </div>
+      <div>
+        <span>{timeLeft.seconds}</span> Seconds
+      </div>
     </div>
   );
 }
-

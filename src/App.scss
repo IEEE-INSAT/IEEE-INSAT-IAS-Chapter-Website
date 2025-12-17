@@ -1,7 +1,7 @@
 //importing needs
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-@import 'variables';
-@import 'keyframes';
+@use 'variables';
+@use 'keyframes';
 @font-face {
   font-family: 'sansation';
   src: url(styles/fonts/Sansation_Regular.ttf);
@@ -242,5 +242,5 @@ h1,h2,h3{
   color: rgb(52, 52, 167);
 }
 
-@import 'styles/pages/home';
-@import 'styles/components/fixed-backg'
+@use 'styles/pages/home';
+@use 'styles/components/fixed-backg'

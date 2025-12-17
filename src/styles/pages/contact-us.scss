@@ -1,3 +1,6 @@
+@use "sass:math";
+
+
 .contact-us{
     min-height: 100vh;
     background-color: var(--dark-background);
@@ -51,10 +54,10 @@
             flex:1;
         }
         &>*:first-of-type{
-            margin-right: $space/2;
+margin-right: calc($space / 2);
         }
         &>*:last-of-type{
-            margin-left: $space/2;
+margin-right: calc($space / 2);
         }
     }
 
