@@ -18,11 +18,11 @@ import ImageLoad from "../components/ImageLoad";
 import Tesla from "../shared/components/Tesla";
 
 export default function Events() {
-  const [current, setCurrent] = useState("training");
+//   const [current, setCurrent] = useState("training");
 
-  const currentActiv = useMemo(() => {
-    return activities.filter((activity) => activity.type === current);
-  }, [current]);
+//   const currentActiv = useMemo(() => {
+//     return activities.filter((activity) => activity.type === current);
+//   }, [current]);
 
   const { triggerShow } = useShow();
 
